@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+
+# VS Code
+.vscode/
+
+# FAISS Index
+faiss_index/
+
+# Large LLM Models
+models/
+
+# Environment Variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
