@@ -1,215 +1,121 @@
 # 🎓 ScholarRAG
 
-> **AI-Powered Research Intelligence Platform using Retrieval-Augmented Generation (RAG)**
+> AI-Powered Research Paper Explainer & Research Assistant using Retrieval-Augmented Generation (RAG)
 
-ScholarRAG is a fully local AI-powered research assistant that enables users to interact with research papers through natural language conversations. The system uses a **Retrieval-Augmented Generation (RAG)** pipeline to retrieve relevant information from uploaded PDF documents and generate accurate, context-aware responses using a **local Large Language Model (LLM)**.
-
-Unlike cloud-based AI assistants, ScholarRAG processes documents locally, ensuring **data privacy**, **offline accessibility**, and **zero dependency on external APIs**.
+ScholarRAG is a fully local AI-powered research assistant that enables users to chat with research papers using natural language. The system extracts information from PDF documents, creates semantic embeddings, stores them in a FAISS vector database, and uses a local Large Language Model (Gemma 2) to answer questions grounded in the uploaded research papers.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 📄 **Research Paper Processing**
-
-  - Extracts text from PDF research papers.
-  - Supports multiple PDF documents.
-- 🧠 **Local Large Language Model**
-
-  - Uses **Google Gemma-2-2B-IT GGUF** running locally through **Llama.cpp**.
-  - No OpenAI API or cloud services required.
-- 🔍 **Semantic Search**
-
-  - Generates embeddings using **Sentence Transformers**.
-  - Retrieves the most relevant document chunks using **FAISS Vector Database**.
-- 💬 **Conversational Question Answering**
-
-  - Ask questions in natural language.
-  - Generates responses using only retrieved document context.
-- 📚 **Source Citations**
-
-  - Displays the document name and page number for retrieved information.
-- ⚡ **Fast Retrieval**
-
-  - Automatically caches the FAISS index.
-  - Documents are indexed only once.
-- 🖥️ **Interactive Interface**
-
-  - Clean web interface powered by **Gradio**.
-- 🔒 **Privacy First**
-
-  - Runs entirely on your local machine.
-  - No data leaves your computer.
+- 📄 Research Paper Question Answering
+- 🤖 Local LLM Inference (Gemma 2 GGUF)
+- 🔍 Semantic Search using FAISS
+- 🧠 Sentence Transformer Embeddings
+- 📚 Retrieval-Augmented Generation (RAG)
+- 📑 Automatic PDF Parsing
+- 📖 Source Citation with Page Numbers
+- 💻 Fully Offline (No OpenAI API Required)
+- 🏗️ Modular Architecture
 
 ---
 
-# 🏗 System Architecture
+## 🏗️ Project Architecture
 
-```text
-                    Research Papers (PDF)
-                            │
-                            ▼
-                    PDF Text Extraction
-                            │
-                            ▼
-                  Text Cleaning & Processing
-                            │
-                            ▼
-                     Document Chunking
-                            │
-                            ▼
-                Sentence Transformer Embeddings
-                            │
-                            ▼
-                  FAISS Vector Database
-                            │
-                            ▼
-                    User Question (Query)
-                            │
-                            ▼
-                  Similarity Search (Top-K)
-                            │
-                            ▼
-                 Retrieved Context + Prompt
-                            │
-                            ▼
-                 Gemma-2 Local LLM (GGUF)
-                            │
-                            ▼
-                Context-Aware AI Response
+```
+                ┌───────────────┐
+                │   PDF Files   │
+                └──────┬────────┘
+                       │
+                PDF Loader
+                       │
+                Text Cleaning
+                       │
+                Document Chunking
+                       │
+         SentenceTransformer Embeddings
+                       │
+                FAISS Vector Store
+                       │
+              Similarity Retrieval
+                       │
+               Gemma 2 (LLM)
+                       │
+              Natural Language Answer
 ```
 
 ---
 
-# ⚙️ How It Works
+## 📂 Current Project Structure
 
-ScholarRAG follows a standard Retrieval-Augmented Generation (RAG) workflow divided into two stages.
-
-## 1️⃣ Document Ingestion & Indexing (Offline)
-
-Performed only once for newly added documents.
-
-### Step 1 — Load PDFs
-
-Research papers stored inside the `docs/` directory are loaded using **PyPDFLoader**.
-
-### Step 2 — Clean Text
-
-The extracted text is cleaned by removing:
-
-- Extra whitespace
-- Invalid characters
-- Non-ASCII symbols
-
-### Step 3 — Chunk Documents
-
-Large documents are divided into overlapping chunks using:
-
-- RecursiveCharacterTextSplitter
-
-### Step 4 — Generate Embeddings
-
-Each chunk is converted into dense vector embeddings using:
-
-- all-MiniLM-L6-v2
-
-### Step 5 — Store in FAISS
-
-The generated embeddings are stored in a FAISS vector database for efficient similarity search.
-
----
-
-## 2️⃣ Retrieval & Question Answering (Online)
-
-Executed every time a user submits a question.
-
-### Step 1
-
-User enters a question.
-
-↓
-
-### Step 2
-
-The question is converted into an embedding.
-
-↓
-
-### Step 3
-
-FAISS retrieves the most relevant document chunks.
-
-↓
-
-### Step 4
-
-The retrieved context is combined with the user query.
-
-↓
-
-### Step 5
-
-The complete prompt is sent to the local Gemma LLM.
-
-↓
-
-### Step 6
-
-The model generates a context-aware answer with source citations.
-
----
-
-# 📂 Project Structure
-
-```text
-ScholarRAG/
+```
+ScholarRAG
 │
-├── app.py                 # Gradio Application
-├── config.py              # Project Configuration
-├── processing.py          # PDF Processing & FAISS Indexing
-├── qa.py                  # Question Answering Pipeline
+├── app.py
+├── config.py
 ├── requirements.txt
 ├── README.md
 │
-├── docs/                  # Research Papers
+├── src
+│   ├── llm
+│   │   └── model.py
+│   │
+│   ├── rag
+│   │   ├── loader.py
+│   │   ├── chunker.py
+│   │   ├── embeddings.py
+│   │   └── vector_store.py
+│   │
+│   ├── services
+│   │   ├── indexing_service.py
+│   │   ├── qa_service.py
+│   │   └── upload_service.py
+│   │
+│   ├── ui
+│   │   └── upload.py
+│   │
+│   └── utils
+│       └── helpers.py
 │
-├── models/                # GGUF Models
-│
-├── faiss_index/           # Cached Vector Database
-│
-└── .gitignore
+├── uploads/
+├── faiss_index/
+├── models/
+└── docs/
 ```
 
 ---
 
-# 🛠 Technology Stack
+## ⚙️ Tech Stack
 
-| Category             | Technology                |
-| -------------------- | ------------------------- |
-| Programming Language | Python                    |
-| LLM                  | Google Gemma-2-2B-IT      |
-| LLM Runtime          | Llama.cpp                 |
-| Framework            | LangChain                 |
-| Embedding Model      | Sentence Transformers     |
-| Vector Database      | FAISS                     |
-| PDF Processing       | PyPDF                     |
-| UI                   | Gradio                    |
-| Machine Learning     | Hugging Face Transformers |
+### Backend
+
+- Python
+- LangChain
+- LlamaCpp
+- Gradio
+
+### Vector Database
+
+- FAISS
+
+### Embedding Model
+
+- sentence-transformers/all-MiniLM-L6-v2
+
+### Local LLM
+
+- Gemma 2 2B Instruct (GGUF)
+
+### Document Processing
+
+- PyPDFLoader
+- RecursiveCharacterTextSplitter
 
 ---
 
-# 💻 Installation
+## 🚀 Installation
 
-## Prerequisites
-
-- Python **3.11**
-- Git
-- Windows / Linux / macOS
-- Visual Studio Build Tools (Windows)
-
----
-
-## Clone Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/Blvackk/ScholarRAG.git
@@ -217,29 +123,27 @@ git clone https://github.com/Blvackk/ScholarRAG.git
 cd ScholarRAG
 ```
 
----
-
-## Create Virtual Environment
+Create virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### Windows
+Activate
+
+Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux / macOS
+Linux / Mac
 
 ```bash
 source venv/bin/activate
 ```
 
----
-
-## Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -247,105 +151,129 @@ pip install -r requirements.txt
 
 ---
 
-## Download Local LLM
+## 📥 Model Setup
 
-Download
+Download a GGUF model (Gemma 2 Instruct recommended).
 
-**Gemma-2-2B-IT GGUF (Q4_K_M)**
+Place it inside
 
-Place the downloaded model inside
-
-```text
+```
 models/
 ```
 
----
+Update the model path inside
 
-## Add Research Papers
-
-Copy your PDF files into
-
-```text
-docs/
+```
+config.py
 ```
 
 ---
 
-## Run Application
+## ▶️ Run
 
 ```bash
 python app.py
 ```
 
-The application will
-
-- Create the FAISS index (first run only)
-- Load the Gemma model
-- Launch the Gradio interface
+The Gradio interface will launch locally.
 
 ---
 
+## 🧠 Current Workflow
 
-# 📈 Current Features
+```
+PDF
+ ↓
 
-- ✅ Local AI Research Assistant
-- ✅ PDF Question Answering
-- ✅ Semantic Search
-- ✅ FAISS Vector Database
-- ✅ Local Gemma LLM
-- ✅ Source Citations
-- ✅ Gradio Web Interface
+Load PDF
 
----
+ ↓
 
-# 🚀 Planned Enhancements
+Clean Text
 
-The following features are planned for future releases:
+ ↓
 
-- 🔐 User Authentication (JWT)
-- 👤 User Dashboard
-- 📤 PDF Upload from Frontend
-- 💾 Chat History
-- 📚 Multi-user Knowledge Base
-- 📝 AI Research Summarization
-- 📊 Research Analytics Dashboard
-- 📄 Automatic Citation Generator
-- 📑 Literature Review Generator
-- ☁ Docker Deployment
-- 🚀 CI/CD Pipeline
-- 🌐 Cloud Deployment
+Chunk Documents
 
----
+ ↓
 
-# 🎯 Learning Outcomes
+Generate Embeddings
 
-This project demonstrates practical implementation of:
+ ↓
 
-- Retrieval-Augmented Generation (RAG)
-- Large Language Models (LLMs)
-- Vector Databases
-- Semantic Search
-- LangChain
-- Prompt Engineering
-- Information Retrieval
-- Natural Language Processing
-- AI Application Development
+Create FAISS Index
+
+ ↓
+
+Retrieve Relevant Chunks
+
+ ↓
+
+Gemma 2
+
+ ↓
+
+Answer with Sources
+```
 
 ---
 
-# 📜 License
+## 📌 Current Capabilities
 
-This project is licensed under the **MIT License**.
+✔ Chat with research papers
+
+✔ Semantic document retrieval
+
+✔ Local inference (offline)
+
+✔ Source citations
+
+✔ Modular RAG pipeline
+
+✔ FAISS indexing
+
+✔ Clean project architecture
 
 ---
 
-# 👨‍💻 Author
+## 🚧 Roadmap
+
+- [ ] Drag & Drop PDF Upload
+- [ ] Incremental FAISS Indexing
+- [ ] Multi-document Support
+- [ ] Research Paper Summarization
+- [ ] Citation Extraction
+- [ ] Export Chat as PDF
+- [ ] Chat History
+- [ ] User Authentication
+- [ ] Docker Support
+- [ ] REST API
+- [ ] Cloud Deployment
+
+---
+
+## 📸 Demo
+
+Coming Soon
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Feel free to fork the project and submit a Pull Request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
 
 **Pratik Lagishetty**
 
-AI | Machine Learning | Data Science | Generative AI
-
-GitHub: https://github.com/Blvackk/
-
-k AI Similarity Search (FAISS)](https://faiss.ai/)
-- **UI**: [Gradio](https://www.gradio.app/)
+GitHub: https://github.com/Blvackk
