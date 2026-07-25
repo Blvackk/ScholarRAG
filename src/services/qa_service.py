@@ -1,4 +1,4 @@
-# qa.py
+# src/services/qa_service.py
 
 from functools import lru_cache
 
@@ -9,13 +9,34 @@ from langchain_community.llms import LlamaCpp
 from config import Config
 
 
+# ==========================================================
+# ScholarRAG Prompt
+# ==========================================================
+
 PROMPT = PromptTemplate(
     template="""
-You are an AI Research Assistant.
+You are ScholarRAG, an AI Research Assistant.
 
-Answer ONLY from the given context.
+Your job is to help the user understand the uploaded research paper.
 
-If the answer is not present in the context, say:
+Answer the user's question using the provided research-paper context.
+
+The user can ask anything about the paper, such as:
+- explanations
+- summaries
+- methodology
+- results
+- datasets
+- models
+- limitations
+- conclusions
+- technical concepts
+
+Do not invent information that is not supported by the context.
+
+If the requested information cannot be found in the provided context,
+clearly say:
+
 "I couldn't find that information in the uploaded research paper."
 
 Context:
@@ -30,8 +51,16 @@ Answer:
 )
 
 
+# ==========================================================
+# Load Local LLM
+# ==========================================================
+
 @lru_cache(maxsize=1)
 def _load_llm():
+    """
+    Load the local Gemma GGUF model once and reuse it.
+    """
+
     print("🧠 Loading Gemma model...")
 
     llm = LlamaCpp(
@@ -40,7 +69,7 @@ def _load_llm():
         n_ctx=Config.LLM_CTX,
         max_tokens=512,
         temperature=0.2,
-        verbose=True,
+        verbose=False,
     )
 
     print("✅ Gemma model loaded successfully!")
@@ -48,8 +77,20 @@ def _load_llm():
     return llm
 
 
-@lru_cache(maxsize=1)
+# ==========================================================
+# Create QA Chain
+# ==========================================================
+
 def get_qa_chain(vector_store):
+    """
+    Create a RetrievalQA chain for the supplied vector store.
+    """
+
+    if vector_store is None:
+        raise ValueError(
+            "Cannot create QA chain because vector store is None."
+        )
+
     print("🚀 Creating RetrievalQA chain...")
 
     retriever = vector_store.as_retriever(

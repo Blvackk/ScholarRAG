@@ -3,7 +3,10 @@
 import os
 from dataclasses import dataclass
 
-# Absolute path to the project root
+# ==========================================================
+# Project Root Directory
+# ==========================================================
+
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -13,37 +16,58 @@ class Config:
     Global configuration for ScholarRAG.
     """
 
-    # =========================
+    # ======================================================
     # Project Paths
-    # =========================
+    # ======================================================
+
     ROOT_DIR = ROOT_DIR
 
-    # Folder where uploaded PDFs are stored
+    # Upload Directory
     UPLOAD_DIR = os.path.join(ROOT_DIR, "uploads")
 
-    # Load every PDF from uploads/
+    # All uploaded PDFs
     PDF_GLOB = os.path.join(UPLOAD_DIR, "*.pdf")
 
-    # Folder where the FAISS index is stored
+    # FAISS Vector Store
     INDEX_DIR = os.path.join(ROOT_DIR, "faiss_index")
 
-    # GGUF LLM model
+    # Local GGUF Model
     MODEL_PATH = os.path.join(
         ROOT_DIR,
         "models",
         "gemma-2-2b-it-Q4_K_M.gguf"
     )
 
-    # =========================
-    # RAG Settings
-    # =========================
+    # ======================================================
+    # RAG Configuration
+    # ======================================================
+
     CHUNK_SIZE = 2048
     CHUNK_OVERLAP = 512
 
-    EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+    EMBEDDING_MODEL = (
+        "sentence-transformers/all-MiniLM-L6-v2"
+    )
 
-    # =========================
-    # LLM Settings
-    # =========================
+    # ======================================================
+    # LLM Configuration
+    # ======================================================
+
     LLM_THREADS = 8
     LLM_CTX = 4096
+
+    # ======================================================
+    # Upload Configuration (NEW)
+    # ======================================================
+
+    ALLOWED_EXTENSIONS = {".pdf"}
+
+    MAX_UPLOAD_SIZE_MB = 100
+
+    # ======================================================
+    # Application Configuration (NEW)
+    # ======================================================
+
+    APP_NAME = "ScholarRAG"
+
+    APP_VERSION = "1.1.0"

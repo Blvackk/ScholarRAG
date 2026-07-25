@@ -1,23 +1,40 @@
+# =========================
+# ScholarRAG .gitignore
+# =========================
+
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
+*.log
 
-# Virtual Environment
+# Virtual Environments
 venv/
+.venv/
+
+# Environment Variables
+.env
+.env.*
 
 # VS Code
 .vscode/
 
-# FAISS Index
+# Gradio
+.gradio/
+
+# FAISS Vector Store
 faiss_index/
 
-# Large LLM Models
+# Uploaded Research Papers
+uploads/
+
+# Local LLM Models
 models/
+*.gguf
 
-# Environment Variables
-.env
+# Temporary / Debug Files
+freeze.txt
 
-# OS files
+# OS Files
 .DS_Store
 Thumbs.db
