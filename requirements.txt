@@ -25,3 +25,5 @@ pypdf==5.3.1
 
 # System Monitoring
 psutil==5.9.0
+
+rank-bm25

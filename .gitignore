@@ -1,40 +1,65 @@
 # =========================
-# ScholarRAG .gitignore
-# =========================
-
 # Python
+# =========================
 __pycache__/
 *.py[cod]
 *.pyo
-*.log
+*.pyd
 
-# Virtual Environments
+# Virtual environments
 venv/
 .venv/
+env/
 
-# Environment Variables
+# =========================
+# Environment / Secrets
+# =========================
 .env
 .env.*
+!.env.example
 
-# VS Code
+# =========================
+# IDE
+# =========================
 .vscode/
+.idea/
+.spyproject/
+.ipynb_checkpoints/
 
-# Gradio
-.gradio/
-
-# FAISS Vector Store
-faiss_index/
-
-# Uploaded Research Papers
-uploads/
-
+# =========================
 # Local LLM Models
+# =========================
 models/
 *.gguf
+*.bin
 
-# Temporary / Debug Files
-freeze.txt
+# =========================
+# Vector Database / Index
+# =========================
+faiss_index/
+*.faiss
+*.pkl
 
-# OS Files
+# =========================
+# User Uploaded PDFs
+# =========================
+uploads/*
+!uploads/.gitkeep
+
+# =========================
+# Temporary / Logs
+# =========================
+*.log
+logs/
+tmp/
+temp/
+
+# =========================
+# OS
+# =========================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Evaluation research papers
+tests/evaluation/papers/*.pdf

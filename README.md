@@ -329,19 +329,19 @@ The QA prompt instructs the model to base its response on the retrieved research
 
 # 🧰 Tech Stack
 
-| Area | Technology |
-|---|---|
-| Programming Language | Python |
-| Frontend | Gradio |
-| RAG Framework | LangChain |
-| PDF Processing | PyPDF / PyPDFLoader |
-| Embeddings | Hugging Face Sentence Transformers |
-| Embedding Model | all-MiniLM-L6-v2 |
-| Vector Store | FAISS |
-| Local LLM | Gemma 2 2B Instruct |
-| Model Format | GGUF |
-| LLM Runtime | llama.cpp / llama-cpp-python |
-| System Monitoring | psutil |
+| Area                 | Technology                         |
+| -------------------- | ---------------------------------- |
+| Programming Language | Python                             |
+| Frontend             | Gradio                             |
+| RAG Framework        | LangChain                          |
+| PDF Processing       | PyPDF / PyPDFLoader                |
+| Embeddings           | Hugging Face Sentence Transformers |
+| Embedding Model      | all-MiniLM-L6-v2                   |
+| Vector Store         | FAISS                              |
+| Local LLM            | Gemma 2 2B Instruct                |
+| Model Format         | GGUF                               |
+| LLM Runtime          | llama.cpp / llama-cpp-python       |
+| System Monitoring    | psutil                             |
 
 ---
 
@@ -789,27 +789,27 @@ Current limitations include:
 
 ## Version 1.0 — Core RAG Pipeline
 
-- [x] Local Gemma GGUF model
-- [x] PDF loading
-- [x] Text chunking
-- [x] Sentence Transformer embeddings
-- [x] FAISS indexing
-- [x] Semantic retrieval
-- [x] Research-paper question answering
+- [X] Local Gemma GGUF model
+- [X] PDF loading
+- [X] Text chunking
+- [X] Sentence Transformer embeddings
+- [X] FAISS indexing
+- [X] Semantic retrieval
+- [X] Research-paper question answering
 
 ---
 
 ## Version 1.1 — Frontend PDF Workflow
 
-- [x] Gradio frontend
-- [x] PDF upload from UI
-- [x] PDF validation
-- [x] Automatic PDF processing
-- [x] Dynamic FAISS index creation
-- [x] Connect uploaded paper to QA pipeline
-- [x] Free-form user questions
-- [x] Source/page information
-- [x] Runtime statistics
+- [X] Gradio frontend
+- [X] PDF upload from UI
+- [X] PDF validation
+- [X] Automatic PDF processing
+- [X] Dynamic FAISS index creation
+- [X] Connect uploaded paper to QA pipeline
+- [X] Free-form user questions
+- [X] Source/page information
+- [X] Runtime statistics
 
 ---
 

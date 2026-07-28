@@ -1,0 +1,554 @@
+[
+  {
+    "id": "p01_q01",
+    "paper": "paper_01.pdf",
+    "question": "What is the main objective of this research paper?",
+    "expected_pages": [1],
+    "expected_evidence": [
+      "mental fatigue",
+      "human-in-the-loop",
+      "multi-agent"
+    ],
+    "category": "overview"
+  },
+  {
+    "id": "p01_q02",
+    "paper": "paper_01.pdf",
+    "question": "What three types of cognitive load are discussed in the paper?",
+    "expected_pages": [2],
+    "expected_evidence": [
+      "intrinsic load",
+      "extraneous load",
+      "germane load"
+    ],
+    "category": "concept"
+  },
+  {
+    "id": "p01_q03",
+    "paper": "paper_01.pdf",
+    "question": "What correlation does the paper report between information overload and fatigue?",
+    "expected_pages": [2],
+    "expected_evidence": [
+      "r = 0.905",
+      "information overload"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p01_q04",
+    "paper": "paper_01.pdf",
+    "question": "What methodology was used in this study?",
+    "expected_pages": [2, 3],
+    "expected_evidence": [
+      "systematic narrative review",
+      "No experimental data"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p01_q05",
+    "paper": "paper_01.pdf",
+    "question": "Which academic databases were used to source the literature?",
+    "expected_pages": [3],
+    "expected_evidence": [
+      "IEEE Xplore",
+      "ScienceDirect",
+      "PubMed Central"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p01_q06",
+    "paper": "paper_01.pdf",
+    "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+    "expected_pages": [3],
+    "expected_evidence": [
+      "39%",
+      "more than three concurrent AI agents"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p01_q07",
+    "paper": "paper_01.pdf",
+    "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+    "expected_pages": [4, 5],
+    "expected_evidence": [
+      "Empirical Validation",
+      "Longitudinal Effects",
+      "MAS Supervision",
+      "Cultural/Contextual Factors"
+    ],
+    "category": "research_gap"
+  },
+  {
+    "id": "p01_q08",
+    "paper": "paper_01.pdf",
+    "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+    "expected_pages": [5, 6],
+    "expected_evidence": [
+      "Adaptive Autonomy",
+      "XAI Interface Design",
+      "Micro-Interventions",
+      "Workload Triage"
+    ],
+    "category": "mitigation"
+  },
+  {
+    "id": "p01_q09",
+    "paper": "paper_01.pdf",
+    "question": "What effect does workload triage have on supervisory error rates?",
+    "expected_pages": [6],
+    "expected_evidence": [
+      "39% supervisory error reduction",
+      "Workload Triage"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p01_q10",
+    "paper": "paper_01.pdf",
+    "question": "What future research directions does the paper recommend?",
+    "expected_pages": [6],
+    "expected_evidence": [
+      "longitudinal",
+      "hybrid autonomy",
+      "generalist populations",
+      "fatigue estimation"
+    ],
+    "category": "future_work"
+  },
+  {
+    "id": "p01_q11",
+    "paper": "paper_01.pdf",
+    "question": "Which GPU model was used to train the proposed neural network?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p01_q12",
+    "paper": "paper_01.pdf",
+    "question": "What accuracy did the proposed machine learning model achieve on the test dataset?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p02_q01",
+    "paper": "paper_02.pdf",
+    "question": "What is the main objective of the proposed fake news detection system?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "fake news detection",
+      "machine learning",
+      "Natural Language Processing"
+    ],
+    "category": "overview"
+  },
+  {
+    "id": "p02_q02",
+    "paper": "paper_02.pdf",
+    "question": "How many articles were collected, and how were they distributed between fake and authentic news?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "44,898 articles",
+      "23,481 fake articles",
+      "21,417 authentic articles"
+    ],
+    "category": "dataset"
+  },
+  {
+    "id": "p02_q03",
+    "paper": "paper_02.pdf",
+    "question": "What sources were used to collect authentic and fabricated news articles?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Reuters news agency",
+      "independent fact checking organizations",
+      "misinformation publishers"
+    ],
+    "category": "dataset"
+  },
+  {
+    "id": "p02_q04",
+    "paper": "paper_02.pdf",
+    "question": "What feature extraction method and number of features were used?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "TF-IDF",
+      "5,000 features"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p02_q05",
+    "paper": "paper_02.pdf",
+    "question": "Which machine learning algorithm was selected for fake news classification?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Logistic Regression"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p02_q06",
+    "paper": "paper_02.pdf",
+    "question": "How was the dataset divided into training and testing sets?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "35,918 articles",
+      "80%",
+      "20%",
+      "8,980 articles"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p02_q07",
+    "paper": "paper_02.pdf",
+    "question": "What accuracy did the Logistic Regression classifier achieve on the test set?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "98.64%",
+      "8,858",
+      "8,980"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p02_q08",
+    "paper": "paper_02.pdf",
+    "question": "What were the cross-validation results of the fake news classifier?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "5",
+      "98.52%",
+      "0.31%"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p02_q09",
+    "paper": "paper_02.pdf",
+    "question": "What computational performance and deployment characteristics are reported for the model?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "95 milliseconds",
+      "12.4 MB",
+      "45-second training time"
+    ],
+    "category": "performance"
+  },
+  {
+    "id": "p02_q10",
+    "paper": "paper_02.pdf",
+    "question": "Why should the fake news detection system be used as decision support rather than the final determinant of truth?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "decision support system",
+      "human judgment",
+      "borderline cases"
+    ],
+    "category": "limitation"
+  },
+  {
+    "id": "p02_q11",
+    "paper": "paper_02.pdf",
+    "question": "Which GPU model was used to train the Logistic Regression classifier?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p02_q12",
+    "paper": "paper_02.pdf",
+    "question": "What BLEU score did the proposed fake news detection model achieve?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p03_q01",
+    "paper": "paper_03.pdf",
+    "question": "What is the main objective of the Adaptive Headlight System?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "night-time driving safety",
+      "automatically adjusts headlights",
+      "reduce glare"
+    ],
+    "category": "overview"
+  },
+  {
+    "id": "p03_q02",
+    "paper": "paper_03.pdf",
+    "question": "What three main features are provided by the Adaptive Headlight System?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Automatic Dimming System",
+      "Steering Based Adjustment",
+      "Manual Override"
+    ],
+    "category": "concept"
+  },
+  {
+    "id": "p03_q03",
+    "paper": "paper_03.pdf",
+    "question": "How does the automatic dimming module detect and respond to an oncoming vehicle?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "LDR",
+      "threshold",
+      "relay",
+      "low beam"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p03_q04",
+    "paper": "paper_03.pdf",
+    "question": "What components are used in the automatic headlight dimming module?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "LDR",
+      "op-amp",
+      "BC547",
+      "relay"
+    ],
+    "category": "hardware"
+  },
+  {
+    "id": "p03_q05",
+    "paper": "paper_03.pdf",
+    "question": "How does the steering-based headlight adjustment module work?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "potentiometer",
+      "555 timer",
+      "PWM",
+      "servo motor"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p03_q06",
+    "paper": "paper_03.pdf",
+    "question": "Which timer IC and servo motor are used in the steering-based adjustment system?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "NE555 Timer IC",
+      "SG90 Servo Motor"
+    ],
+    "category": "hardware"
+  },
+  {
+    "id": "p03_q07",
+    "paper": "paper_03.pdf",
+    "question": "What role does the manual override switch play in the headlight system?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "override the automation",
+      "high beam"
+    ],
+    "category": "concept"
+  },
+  {
+    "id": "p03_q08",
+    "paper": "paper_03.pdf",
+    "question": "How does the LDR operate in the Adaptive Headlight System?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "photoconductivity",
+      "resistance decreases",
+      "bright light"
+    ],
+    "category": "concept"
+  },
+  {
+    "id": "p03_q09",
+    "paper": "paper_03.pdf",
+    "question": "What were the results of testing the implemented Adaptive Headlight System?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "tested successfully",
+      "breadboard",
+      "PCB",
+      "reliable performance"
+    ],
+    "category": "result"
+  },
+  {
+    "id": "p03_q10",
+    "paper": "paper_03.pdf",
+    "question": "Why does the paper argue that an analog adaptive headlight system is useful for older vehicles?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "analog system",
+      "cost efficient",
+      "older vehicles"
+    ],
+    "category": "conclusion"
+  },
+  {
+    "id": "p03_q11",
+    "paper": "paper_03.pdf",
+    "question": "Which convolutional neural network architecture controls the headlights?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p03_q12",
+    "paper": "paper_03.pdf",
+    "question": "What classification accuracy did the Adaptive Headlight System achieve?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p04_q01",
+    "paper": "paper_04.pdf",
+    "question": "What is the main objective of the underground water tank study?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "rectangular",
+      "circular",
+      "static loading",
+      "Earthquake Zone-III"
+    ],
+    "category": "overview"
+  },
+  {
+    "id": "p04_q02",
+    "paper": "paper_04.pdf",
+    "question": "How many analytical models were developed and which software was used?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Twenty",
+      "STAAD.Pro"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p04_q03",
+    "paper": "paper_04.pdf",
+    "question": "Into what four groups were the water tank models divided?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Rectangular Tanks under Static Loading",
+      "Circular Tanks under Static Loading",
+      "Rectangular Tanks under Earthquake Zone-III Loading",
+      "Circular Tanks under Earthquake Zone-III Loading"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p04_q04",
+    "paper": "paper_04.pdf",
+    "question": "What loading conditions and structural responses were considered in the analysis?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "self-weight",
+      "hydrostatic pressure",
+      "earthquake loads",
+      "displacement",
+      "support reactions"
+    ],
+    "category": "methodology"
+  },
+  {
+    "id": "p04_q05",
+    "paper": "paper_04.pdf",
+    "question": "Which models recorded the lowest and highest displacement values?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "1.879 mm",
+      "Models 6 and 16",
+      "57.238 mm",
+      "Models 9 and 19"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p04_q06",
+    "paper": "paper_04.pdf",
+    "question": "How did increasing wall thickness affect displacement in the rectangular tanks?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "88.54%",
+      "87.33%",
+      "reduced displacement"
+    ],
+    "category": "numeric"
+  },
+  {
+    "id": "p04_q07",
+    "paper": "paper_04.pdf",
+    "question": "How did seismic loading affect the structural response of the water tanks?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "minor increases",
+      "support reactions",
+      "stresses",
+      "moments",
+      "displacement values remained largely unchanged"
+    ],
+    "category": "result"
+  },
+  {
+    "id": "p04_q08",
+    "paper": "paper_04.pdf",
+    "question": "Which model demonstrated the best overall structural performance and why?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "Model 16",
+      "low displacement",
+      "high stiffness",
+      "satisfactory stress levels"
+    ],
+    "category": "result"
+  },
+  {
+    "id": "p04_q09",
+    "paper": "paper_04.pdf",
+    "question": "How did rectangular and circular tanks differ in their structural performance?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "rectangular tanks",
+      "better displacement control",
+      "circular tanks",
+      "higher bending moments"
+    ],
+    "category": "comparison"
+  },
+  {
+    "id": "p04_q10",
+    "paper": "paper_04.pdf",
+    "question": "What major conclusions did the study reach about wall thickness and tank geometry?",
+    "expected_pages": [],
+    "expected_evidence": [
+      "wall thickness",
+      "stiffness",
+      "rectangular tanks",
+      "circular tanks"
+    ],
+    "category": "conclusion"
+  },
+  {
+    "id": "p04_q11",
+    "paper": "paper_04.pdf",
+    "question": "Which GPU was used to run the STAAD.Pro simulations?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  },
+  {
+    "id": "p04_q12",
+    "paper": "paper_04.pdf",
+    "question": "What was the measured water leakage rate of Model 16 during physical testing?",
+    "expected_pages": [],
+    "expected_evidence": [],
+    "category": "unanswerable"
+  }
+]

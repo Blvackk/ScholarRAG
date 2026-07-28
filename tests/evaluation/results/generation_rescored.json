@@ -1,0 +1,233 @@
+{
+  "evaluation": "generation_rescore",
+  "source": "generation_baseline.json",
+  "metrics": {
+    "total_questions": 12,
+    "answerable_questions": 10,
+    "unanswerable_questions": 2,
+    "any_evidence_rate": 0.9,
+    "full_evidence_rate": 0.6,
+    "mean_answer_coverage": 0.7666666666666666,
+    "correct_refusals": 2,
+    "refusal_accuracy": 1.0
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "What is the main objective of this research paper?",
+      "category": "overview",
+      "generated_answer": "The main objective of this research paper is to provide a comprehensive review of both empirical and theoretical studies published between 2020 and 2025 on the impact of mental fatigue on human oversight in multi-agent AI systems. It examines how mental fatigue develops during prolonged interaction with AI systems, its impact on human performance, and strategies proposed to reduce its effects.",
+      "expected_evidence": [
+        "mental fatigue",
+        "human-in-the-loop",
+        "multi-agent"
+      ],
+      "matched_evidence": [
+        "mental fatigue",
+        "multi-agent"
+      ],
+      "missing_evidence": [
+        "human-in-the-loop"
+      ],
+      "answer_coverage": 0.6666666666666666,
+      "any_evidence": true,
+      "full_evidence": false
+    },
+    {
+      "id": "q02",
+      "question": "What three types of cognitive load are discussed in the paper?",
+      "category": "concept",
+      "generated_answer": "The three types of cognitive load discussed in the paper are:\n1. Intrinsic load\n2. Extraneous load\n3. Germane load",
+      "expected_evidence": [
+        "intrinsic load",
+        "extraneous load",
+        "germane load"
+      ],
+      "matched_evidence": [
+        "intrinsic load",
+        "extraneous load",
+        "germane load"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q03",
+      "question": "What correlation does the paper report between information overload and fatigue?",
+      "category": "numeric",
+      "generated_answer": "The paper reports a correlation of r = 0.905 between information overload and fatigue.",
+      "expected_evidence": [
+        "r = 0.905",
+        "information overload"
+      ],
+      "matched_evidence": [
+        "r = 0.905",
+        "information overload"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q04",
+      "question": "What methodology was used in this study?",
+      "category": "methodology",
+      "generated_answer": "The paper reviews existing research on mental fatigue in HITL systems. It synthesizes empirical and theoretical studies published between 2020 and 2025, examining how mental fatigue develops during prolonged interaction with AI systems, its impact on human performance, and proposed mitigation strategies. The methodology used is a literature review.",
+      "expected_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "matched_evidence": [],
+      "missing_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "answer_coverage": 0.0,
+      "any_evidence": false,
+      "full_evidence": false
+    },
+    {
+      "id": "q05",
+      "question": "Which academic databases were used to source the literature?",
+      "category": "methodology",
+      "generated_answer": "The literature was sourced from three primary academic databases: IEEE Xplore, ScienceDirect, and PubMed Central.",
+      "expected_evidence": [
+        "IEEE Xplore",
+        "ScienceDirect",
+        "PubMed Central"
+      ],
+      "matched_evidence": [
+        "IEEE Xplore",
+        "ScienceDirect",
+        "PubMed Central"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q06",
+      "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+      "category": "numeric",
+      "generated_answer": "Error rates increase by 39% when supervisors oversee more than three concurrent AI agents.",
+      "expected_evidence": [
+        "39%",
+        "more than three concurrent AI agents"
+      ],
+      "matched_evidence": [
+        "39%",
+        "more than three concurrent AI agents"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q07",
+      "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+      "category": "research_gap",
+      "generated_answer": "The paper identifies several major research gaps in mental fatigue and HITL systems:\n\n* **Empirical Validation:** Predominantly theoretical frameworks with limited real-world applicability.\n* **Longitudinal Effects:** Cross-sectional data; moderators untested; fatigue thresholds uncharacterized. \n* **MAS Supervision:** Single-agent research focus only; coordination overhead unmeasured.\n* **Cultural/Contextual Factors:** WEIRD sample dominance; generalizability uncertain.\n\nThe paper also highlights the need for more research on:\n\n* **Adaptive Systems That Read Operator State:**  AI systems that monitor operator state in real time and adjust their behavior accordingly.",
+      "expected_evidence": [
+        "Empirical Validation",
+        "Longitudinal Effects",
+        "MAS Supervision",
+        "Cultural/Contextual Factors"
+      ],
+      "matched_evidence": [
+        "Empirical Validation",
+        "Longitudinal Effects",
+        "MAS Supervision",
+        "Cultural/Contextual Factors"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q08",
+      "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+      "category": "mitigation",
+      "generated_answer": "The paper discusses several mitigation strategies for reducing mental fatigue in HITL systems, including:\n\n* **Micro-Interventions:** Fatigue-triggered automated break prompts.\n* **Attenuation of Momentary Fatigue:**  Techniques to reduce momentary fatigue during supervision tasks. \n* **Workload Triage:** NLP-based urgency-ranked task sequencing.\n* **Hybrid Autonomy:** Dynamically redistributing decision-making between human and agent based on operator state.\n\nThe paper emphasizes that the effectiveness of these strategies depends on their implementation in real operational contexts rather than just lab analogues.",
+      "expected_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "matched_evidence": [
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "missing_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design"
+      ],
+      "answer_coverage": 0.5,
+      "any_evidence": true,
+      "full_evidence": false
+    },
+    {
+      "id": "q09",
+      "question": "What effect does workload triage have on supervisory error rates?",
+      "category": "numeric",
+      "generated_answer": "According to the research paper, workload triage using NLP to rank incoming tasks by urgency and relevance before presenting them to the operator prevents the particular failure mode of decision paralysis. It suggests that this kind of triage contributes to a 39% reduction in error rates under high-load conditions [9].",
+      "expected_evidence": [
+        "39% supervisory error reduction",
+        "Workload Triage"
+      ],
+      "matched_evidence": [
+        "39% supervisory error reduction",
+        "Workload Triage"
+      ],
+      "missing_evidence": [],
+      "answer_coverage": 1.0,
+      "any_evidence": true,
+      "full_evidence": true
+    },
+    {
+      "id": "q10",
+      "question": "What future research directions does the paper recommend?",
+      "category": "future_work",
+      "generated_answer": "The paper recommends several future research directions:\n\n* **Longitudinal studies:**  Investigate the impact of sustained AI oversight on people over weeks and months, not just a single session or survey. Track fatigue biomarkers (EEG, cortisol, heart rate variability) across real operational periods in authentic MAS supervision contexts.\n* **Hybrid autonomy:** Investigate the engineering and human factors challenges of dynamically redistributing decision-making between human and agent based on real-time operator state.  Determine when increased autonomy actually helps rather than just shifting cognitive load elsewhere. \n* **Multi-agent fatigue:** Research fatigue in multi-agent supervision environments, which are different from single-agent interactions. This includes studying the challenges of context accumulation across parallel agent streams, handoff coordination overhead, and tracking agent interaction behavior.",
+      "expected_evidence": [
+        "longitudinal",
+        "hybrid autonomy",
+        "generalist populations",
+        "fatigue estimation"
+      ],
+      "matched_evidence": [
+        "longitudinal",
+        "hybrid autonomy"
+      ],
+      "missing_evidence": [
+        "generalist populations",
+        "fatigue estimation"
+      ],
+      "answer_coverage": 0.5,
+      "any_evidence": true,
+      "full_evidence": false
+    },
+    {
+      "id": "q11",
+      "question": "Which GPU model was used to train the proposed neural network?",
+      "category": "unanswerable",
+      "generated_answer": "The provided research paper does not mention the specific GPU model used to train the proposed neural network.",
+      "is_refusal": true,
+      "correct_refusal": true
+    },
+    {
+      "id": "q12",
+      "question": "What accuracy did the proposed machine learning model achieve on the test dataset?",
+      "category": "unanswerable",
+      "generated_answer": "The provided text does not contain information about a machine learning model or its accuracy on a test dataset.",
+      "is_refusal": true,
+      "correct_refusal": true
+    }
+  ]
+}

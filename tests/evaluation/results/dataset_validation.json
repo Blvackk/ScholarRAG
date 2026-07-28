@@ -1,0 +1,1281 @@
+{
+  "dataset_path": "C:\\Users\\prati\\Downloads\\AI-Powered Research Paper Explainer\\ScholarRAG\\tests\\evaluation\\dataset.json",
+  "total_questions": 48,
+  "total_papers": 4,
+  "structure_issues": [],
+  "papers": {
+    "paper_01.pdf": {
+      "exists": true,
+      "questions": 12,
+      "answerable_questions": 10,
+      "unanswerable_questions": 2,
+      "total_evidence": 29,
+      "found_evidence": 29,
+      "missing_evidence": 0,
+      "evidence": [
+        {
+          "question_id": "p01_q01",
+          "evidence": "mental fatigue",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8
+          ]
+        },
+        {
+          "question_id": "p01_q01",
+          "evidence": "human-in-the-loop",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "question_id": "p01_q01",
+          "evidence": "multi-agent",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "question_id": "p01_q02",
+          "evidence": "intrinsic load",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p01_q02",
+          "evidence": "extraneous load",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p01_q02",
+          "evidence": "germane load",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p01_q03",
+          "evidence": "r = 0.905",
+          "found": true,
+          "pages": [
+            2,
+            4
+          ]
+        },
+        {
+          "question_id": "p01_q03",
+          "evidence": "information overload",
+          "found": true,
+          "pages": [
+            2,
+            4
+          ]
+        },
+        {
+          "question_id": "p01_q04",
+          "evidence": "systematic narrative review",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p01_q04",
+          "evidence": "No experimental data",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p01_q05",
+          "evidence": "IEEE Xplore",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p01_q05",
+          "evidence": "ScienceDirect",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p01_q05",
+          "evidence": "PubMed Central",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p01_q06",
+          "evidence": "39%",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "question_id": "p01_q06",
+          "evidence": "more than three concurrent AI agents",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p01_q07",
+          "evidence": "Empirical Validation",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p01_q07",
+          "evidence": "Longitudinal Effects",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p01_q07",
+          "evidence": "MAS Supervision",
+          "found": true,
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q07",
+          "evidence": "Cultural/Contextual Factors",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p01_q08",
+          "evidence": "Adaptive Autonomy",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q08",
+          "evidence": "XAI Interface Design",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q08",
+          "evidence": "Micro-Interventions",
+          "found": true,
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q08",
+          "evidence": "Workload Triage",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q09",
+          "evidence": "39% supervisory error reduction",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q09",
+          "evidence": "Workload Triage",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q10",
+          "evidence": "longitudinal",
+          "found": true,
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "question_id": "p01_q10",
+          "evidence": "hybrid autonomy",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q10",
+          "evidence": "generalist populations",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p01_q10",
+          "evidence": "fatigue estimation",
+          "found": true,
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "evidence_coverage": 1.0
+    },
+    "paper_02.pdf": {
+      "exists": true,
+      "questions": 12,
+      "answerable_questions": 10,
+      "unanswerable_questions": 2,
+      "total_evidence": 28,
+      "found_evidence": 28,
+      "missing_evidence": 0,
+      "evidence": [
+        {
+          "question_id": "p02_q01",
+          "evidence": "fake news detection",
+          "found": true,
+          "pages": [
+            1,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "question_id": "p02_q01",
+          "evidence": "machine learning",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            6,
+            7
+          ]
+        },
+        {
+          "question_id": "p02_q01",
+          "evidence": "Natural Language Processing",
+          "found": true,
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_id": "p02_q02",
+          "evidence": "44,898 articles",
+          "found": true,
+          "pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q02",
+          "evidence": "23,481 fake articles",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q02",
+          "evidence": "21,417 authentic articles",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q03",
+          "evidence": "Reuters news agency",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q03",
+          "evidence": "independent fact checking organizations",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q03",
+          "evidence": "misinformation publishers",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p02_q04",
+          "evidence": "TF-IDF",
+          "found": true,
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p02_q04",
+          "evidence": "5,000 features",
+          "found": true,
+          "pages": [
+            1,
+            4
+          ]
+        },
+        {
+          "question_id": "p02_q05",
+          "evidence": "Logistic Regression",
+          "found": true,
+          "pages": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p02_q06",
+          "evidence": "35,918 articles",
+          "found": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "question_id": "p02_q06",
+          "evidence": "80%",
+          "found": true,
+          "pages": [
+            4,
+            7
+          ]
+        },
+        {
+          "question_id": "p02_q06",
+          "evidence": "20%",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "question_id": "p02_q06",
+          "evidence": "8,980 articles",
+          "found": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "question_id": "p02_q07",
+          "evidence": "98.64%",
+          "found": true,
+          "pages": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p02_q07",
+          "evidence": "8,858",
+          "found": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "question_id": "p02_q07",
+          "evidence": "8,980",
+          "found": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "question_id": "p02_q08",
+          "evidence": "5",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "question_id": "p02_q08",
+          "evidence": "98.52%",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p02_q08",
+          "evidence": "0.31%",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p02_q09",
+          "evidence": "95 milliseconds",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p02_q09",
+          "evidence": "12.4 MB",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p02_q09",
+          "evidence": "45-second training time",
+          "found": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "question_id": "p02_q10",
+          "evidence": "decision support system",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p02_q10",
+          "evidence": "human judgment",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p02_q10",
+          "evidence": "borderline cases",
+          "found": true,
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "evidence_coverage": 1.0
+    },
+    "paper_03.pdf": {
+      "exists": true,
+      "questions": 12,
+      "answerable_questions": 10,
+      "unanswerable_questions": 2,
+      "total_evidence": 32,
+      "found_evidence": 32,
+      "missing_evidence": 0,
+      "evidence": [
+        {
+          "question_id": "p03_q01",
+          "evidence": "night-time driving safety",
+          "found": true,
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_id": "p03_q01",
+          "evidence": "automatically adjusts headlights",
+          "found": true,
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_id": "p03_q01",
+          "evidence": "reduce glare",
+          "found": true,
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_id": "p03_q02",
+          "evidence": "Automatic Dimming System",
+          "found": true,
+          "pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "question_id": "p03_q02",
+          "evidence": "Steering Based Adjustment",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q02",
+          "evidence": "Manual Override",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q03",
+          "evidence": "LDR",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "question_id": "p03_q03",
+          "evidence": "threshold",
+          "found": true,
+          "pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q03",
+          "evidence": "relay",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q03",
+          "evidence": "low beam",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q04",
+          "evidence": "LDR",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "question_id": "p03_q04",
+          "evidence": "op-amp",
+          "found": true,
+          "pages": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q04",
+          "evidence": "BC547",
+          "found": true,
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q04",
+          "evidence": "relay",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q05",
+          "evidence": "potentiometer",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q05",
+          "evidence": "555 timer",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q05",
+          "evidence": "PWM",
+          "found": true,
+          "pages": [
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "question_id": "p03_q05",
+          "evidence": "servo motor",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q06",
+          "evidence": "NE555 Timer IC",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q06",
+          "evidence": "SG90 Servo Motor",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q07",
+          "evidence": "override the automation",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q07",
+          "evidence": "high beam",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q08",
+          "evidence": "photoconductivity",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q08",
+          "evidence": "resistance decreases",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q08",
+          "evidence": "bright light",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q09",
+          "evidence": "tested successfully",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q09",
+          "evidence": "breadboard",
+          "found": true,
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q09",
+          "evidence": "PCB",
+          "found": true,
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q09",
+          "evidence": "reliable performance",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p03_q10",
+          "evidence": "analog system",
+          "found": true,
+          "pages": [
+            2,
+            4
+          ]
+        },
+        {
+          "question_id": "p03_q10",
+          "evidence": "cost efficient",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p03_q10",
+          "evidence": "older vehicles",
+          "found": true,
+          "pages": [
+            2,
+            5
+          ]
+        }
+      ],
+      "evidence_coverage": 1.0
+    },
+    "paper_04.pdf": {
+      "exists": true,
+      "questions": 12,
+      "answerable_questions": 10,
+      "unanswerable_questions": 2,
+      "total_evidence": 39,
+      "found_evidence": 39,
+      "missing_evidence": 0,
+      "evidence": [
+        {
+          "question_id": "p04_q01",
+          "evidence": "rectangular",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "question_id": "p04_q01",
+          "evidence": "circular",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q01",
+          "evidence": "static loading",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q01",
+          "evidence": "Earthquake Zone-III",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q02",
+          "evidence": "Twenty",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "question_id": "p04_q02",
+          "evidence": "STAAD.Pro",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q03",
+          "evidence": "Rectangular Tanks under Static Loading",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p04_q03",
+          "evidence": "Circular Tanks under Static Loading",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p04_q03",
+          "evidence": "Rectangular Tanks under Earthquake Zone-III Loading",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p04_q03",
+          "evidence": "Circular Tanks under Earthquake Zone-III Loading",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p04_q04",
+          "evidence": "self-weight",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q04",
+          "evidence": "hydrostatic pressure",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q04",
+          "evidence": "earthquake loads",
+          "found": true,
+          "pages": [
+            2
+          ]
+        },
+        {
+          "question_id": "p04_q04",
+          "evidence": "displacement",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q04",
+          "evidence": "support reactions",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q05",
+          "evidence": "1.879 mm",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q05",
+          "evidence": "Models 6 and 16",
+          "found": true,
+          "pages": [
+            1,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q05",
+          "evidence": "57.238 mm",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q05",
+          "evidence": "Models 9 and 19",
+          "found": true,
+          "pages": [
+            1,
+            3,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q06",
+          "evidence": "88.54%",
+          "found": true,
+          "pages": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "question_id": "p04_q06",
+          "evidence": "87.33%",
+          "found": true,
+          "pages": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "question_id": "p04_q06",
+          "evidence": "reduced displacement",
+          "found": true,
+          "pages": [
+            2,
+            5
+          ]
+        },
+        {
+          "question_id": "p04_q07",
+          "evidence": "minor increases",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p04_q07",
+          "evidence": "support reactions",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q07",
+          "evidence": "stresses",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "question_id": "p04_q07",
+          "evidence": "moments",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q07",
+          "evidence": "displacement values remained largely unchanged",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p04_q08",
+          "evidence": "Model 16",
+          "found": true,
+          "pages": [
+            2,
+            3,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q08",
+          "evidence": "low displacement",
+          "found": true,
+          "pages": [
+            3,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q08",
+          "evidence": "high stiffness",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p04_q08",
+          "evidence": "satisfactory stress levels",
+          "found": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "question_id": "p04_q09",
+          "evidence": "rectangular tanks",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q09",
+          "evidence": "better displacement control",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q09",
+          "evidence": "circular tanks",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q09",
+          "evidence": "higher bending moments",
+          "found": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q10",
+          "evidence": "wall thickness",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q10",
+          "evidence": "stiffness",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q10",
+          "evidence": "rectangular tanks",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "question_id": "p04_q10",
+          "evidence": "circular tanks",
+          "found": true,
+          "pages": [
+            1,
+            2,
+            5,
+            6
+          ]
+        }
+      ],
+      "evidence_coverage": 1.0
+    }
+  },
+  "summary": {
+    "answerable_questions": 40,
+    "unanswerable_questions": 8,
+    "total_evidence": 128,
+    "found_evidence": 128,
+    "missing_evidence": 0,
+    "evidence_coverage": 1.0
+  }
+}

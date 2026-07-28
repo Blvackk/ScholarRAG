@@ -1,0 +1,938 @@
+{
+  "configuration": {
+    "chunk_size": 2048,
+    "chunk_overlap": 512,
+    "diagnostic_k": 20,
+    "production_k": 5,
+    "rrf_k": 60
+  },
+  "targets": {
+    "p01_q08": "hybrid_regression",
+    "p04_q07": "hybrid_regression",
+    "p03_q06": "retrieval_failure",
+    "p03_q08": "retrieval_failure",
+    "p01_q04": "hybrid_success",
+    "p02_q10": "hybrid_success",
+    "p03_q09": "hybrid_success"
+  },
+  "summary": {
+    "FUSION_REGRESSION": 2,
+    "SPARSE_RETRIEVAL_RESCUE": 3,
+    "RANK_DEPTH_FAILURE": 1,
+    "MIXED_OR_UNCHANGED": 1
+  },
+  "results": [
+    {
+      "id": "p01_q08",
+      "paper": "paper_01.pdf",
+      "type": "hybrid_regression",
+      "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+      "expected_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.75,
+          "matched": [
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "missing": [
+            "Adaptive Autonomy"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "full": false
+        },
+        "rrf": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "full": false
+        },
+        "preserved": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "full": false
+        }
+      },
+      "evidence_ranks": {
+        "Adaptive Autonomy": {
+          "faiss": {
+            "rank": 9,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "bm25": {
+            "rank": 8,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "rrf": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "preserved": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          }
+        },
+        "XAI Interface Design": {
+          "faiss": {
+            "rank": 5,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 8,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "rrf": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "preserved": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          }
+        },
+        "Micro-Interventions": {
+          "faiss": {
+            "rank": 5,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 6,
+            "page": 5,
+            "chunk_id": 14
+          },
+          "rrf": {
+            "rank": 10,
+            "page": 5,
+            "chunk_id": 14
+          },
+          "preserved": {
+            "rank": 10,
+            "page": 5,
+            "chunk_id": 14
+          }
+        },
+        "Workload Triage": {
+          "faiss": {
+            "rank": 5,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 8,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "rrf": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          },
+          "preserved": {
+            "rank": 11,
+            "page": 6,
+            "chunk_id": 16
+          }
+        }
+      },
+      "diagnosis": "FUSION_REGRESSION"
+    },
+    {
+      "id": "p01_q04",
+      "paper": "paper_01.pdf",
+      "type": "hybrid_success",
+      "question": "What methodology was used in this study?",
+      "expected_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 1.0,
+          "matched": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "rrf": {
+          "coverage": 1.0,
+          "matched": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "preserved": {
+          "coverage": 1.0,
+          "matched": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "missing": [],
+          "full": true
+        }
+      },
+      "evidence_ranks": {
+        "systematic narrative review": {
+          "faiss": {
+            "rank": 7,
+            "page": 2,
+            "chunk_id": 5
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 2,
+            "chunk_id": 5
+          },
+          "rrf": {
+            "rank": 1,
+            "page": 2,
+            "chunk_id": 5
+          },
+          "preserved": {
+            "rank": 2,
+            "page": 2,
+            "chunk_id": 5
+          }
+        },
+        "No experimental data": {
+          "faiss": {
+            "rank": 10,
+            "page": 2,
+            "chunk_id": 6
+          },
+          "bm25": {
+            "rank": 2,
+            "page": 2,
+            "chunk_id": 6
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 2,
+            "chunk_id": 6
+          },
+          "preserved": {
+            "rank": 4,
+            "page": 2,
+            "chunk_id": 6
+          }
+        }
+      },
+      "diagnosis": "SPARSE_RETRIEVAL_RESCUE"
+    },
+    {
+      "id": "p02_q10",
+      "paper": "paper_02.pdf",
+      "type": "hybrid_success",
+      "question": "Why should the fake news detection system be used as decision support rather than the final determinant of truth?",
+      "expected_evidence": [
+        "decision support system",
+        "human judgment",
+        "borderline cases"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "decision support system",
+            "human judgment",
+            "borderline cases"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 1.0,
+          "matched": [
+            "decision support system",
+            "human judgment",
+            "borderline cases"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "rrf": {
+          "coverage": 1.0,
+          "matched": [
+            "decision support system",
+            "human judgment",
+            "borderline cases"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "preserved": {
+          "coverage": 1.0,
+          "matched": [
+            "decision support system",
+            "human judgment",
+            "borderline cases"
+          ],
+          "missing": [],
+          "full": true
+        }
+      },
+      "evidence_ranks": {
+        "decision support system": {
+          "faiss": {
+            "rank": 9,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "preserved": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          }
+        },
+        "human judgment": {
+          "faiss": {
+            "rank": 9,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "preserved": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          }
+        },
+        "borderline cases": {
+          "faiss": {
+            "rank": 9,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          },
+          "preserved": {
+            "rank": 3,
+            "page": 6,
+            "chunk_id": 17
+          }
+        }
+      },
+      "diagnosis": "SPARSE_RETRIEVAL_RESCUE"
+    },
+    {
+      "id": "p03_q06",
+      "paper": "paper_03.pdf",
+      "type": "retrieval_failure",
+      "question": "Which timer IC and servo motor are used in the steering-based adjustment system?",
+      "expected_evidence": [
+        "NE555 Timer IC",
+        "SG90 Servo Motor"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "NE555 Timer IC",
+            "SG90 Servo Motor"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "NE555 Timer IC",
+            "SG90 Servo Motor"
+          ],
+          "full": false
+        },
+        "rrf": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "NE555 Timer IC",
+            "SG90 Servo Motor"
+          ],
+          "full": false
+        },
+        "preserved": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "NE555 Timer IC",
+            "SG90 Servo Motor"
+          ],
+          "full": false
+        }
+      },
+      "evidence_ranks": {
+        "NE555 Timer IC": {
+          "faiss": {
+            "rank": 9,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "bm25": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "rrf": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "preserved": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 9
+          }
+        },
+        "SG90 Servo Motor": {
+          "faiss": {
+            "rank": 9,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "bm25": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "rrf": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 9
+          },
+          "preserved": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 9
+          }
+        }
+      },
+      "diagnosis": "RANK_DEPTH_FAILURE"
+    },
+    {
+      "id": "p03_q08",
+      "paper": "paper_03.pdf",
+      "type": "retrieval_failure",
+      "question": "How does the LDR operate in the Adaptive Headlight System?",
+      "expected_evidence": [
+        "photoconductivity",
+        "resistance decreases",
+        "bright light"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "photoconductivity",
+            "resistance decreases",
+            "bright light"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 1.0,
+          "matched": [
+            "photoconductivity",
+            "resistance decreases",
+            "bright light"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "rrf": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "photoconductivity",
+            "resistance decreases",
+            "bright light"
+          ],
+          "full": false
+        },
+        "preserved": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "photoconductivity",
+            "resistance decreases",
+            "bright light"
+          ],
+          "full": false
+        }
+      },
+      "evidence_ranks": {
+        "photoconductivity": {
+          "faiss": {
+            "rank": 13,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "bm25": {
+            "rank": 3,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "rrf": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "preserved": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          }
+        },
+        "resistance decreases": {
+          "faiss": {
+            "rank": 13,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "bm25": {
+            "rank": 3,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "rrf": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "preserved": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          }
+        },
+        "bright light": {
+          "faiss": {
+            "rank": 13,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "bm25": {
+            "rank": 3,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "rrf": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          },
+          "preserved": {
+            "rank": 8,
+            "page": 3,
+            "chunk_id": 8
+          }
+        }
+      },
+      "diagnosis": "MIXED_OR_UNCHANGED"
+    },
+    {
+      "id": "p03_q09",
+      "paper": "paper_03.pdf",
+      "type": "hybrid_success",
+      "question": "What were the results of testing the implemented Adaptive Headlight System?",
+      "expected_evidence": [
+        "tested successfully",
+        "breadboard",
+        "PCB",
+        "reliable performance"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 0.0,
+          "matched": [],
+          "missing": [
+            "tested successfully",
+            "breadboard",
+            "PCB",
+            "reliable performance"
+          ],
+          "full": false
+        },
+        "bm25": {
+          "coverage": 1.0,
+          "matched": [
+            "tested successfully",
+            "breadboard",
+            "PCB",
+            "reliable performance"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "rrf": {
+          "coverage": 1.0,
+          "matched": [
+            "tested successfully",
+            "breadboard",
+            "PCB",
+            "reliable performance"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "preserved": {
+          "coverage": 1.0,
+          "matched": [
+            "tested successfully",
+            "breadboard",
+            "PCB",
+            "reliable performance"
+          ],
+          "missing": [],
+          "full": true
+        }
+      },
+      "evidence_ranks": {
+        "tested successfully": {
+          "faiss": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "bm25": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "rrf": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "preserved": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          }
+        },
+        "breadboard": {
+          "faiss": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 4,
+            "chunk_id": 11
+          },
+          "rrf": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "preserved": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          }
+        },
+        "PCB": {
+          "faiss": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "bm25": {
+            "rank": 1,
+            "page": 4,
+            "chunk_id": 11
+          },
+          "rrf": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "preserved": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          }
+        },
+        "reliable performance": {
+          "faiss": {
+            "rank": 7,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "bm25": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "rrf": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          },
+          "preserved": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 10
+          }
+        }
+      },
+      "diagnosis": "SPARSE_RETRIEVAL_RESCUE"
+    },
+    {
+      "id": "p04_q07",
+      "paper": "paper_04.pdf",
+      "type": "hybrid_regression",
+      "question": "How did seismic loading affect the structural response of the water tanks?",
+      "expected_evidence": [
+        "minor increases",
+        "support reactions",
+        "stresses",
+        "moments",
+        "displacement values remained largely unchanged"
+      ],
+      "top5": {
+        "faiss": {
+          "coverage": 1.0,
+          "matched": [
+            "minor increases",
+            "support reactions",
+            "stresses",
+            "moments",
+            "displacement values remained largely unchanged"
+          ],
+          "missing": [],
+          "full": true
+        },
+        "bm25": {
+          "coverage": 0.6,
+          "matched": [
+            "support reactions",
+            "stresses",
+            "moments"
+          ],
+          "missing": [
+            "minor increases",
+            "displacement values remained largely unchanged"
+          ],
+          "full": false
+        },
+        "rrf": {
+          "coverage": 0.6,
+          "matched": [
+            "support reactions",
+            "stresses",
+            "moments"
+          ],
+          "missing": [
+            "minor increases",
+            "displacement values remained largely unchanged"
+          ],
+          "full": false
+        },
+        "preserved": {
+          "coverage": 0.6,
+          "matched": [
+            "support reactions",
+            "stresses",
+            "moments"
+          ],
+          "missing": [
+            "minor increases",
+            "displacement values remained largely unchanged"
+          ],
+          "full": false
+        }
+      },
+      "evidence_ranks": {
+        "minor increases": {
+          "faiss": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "bm25": {
+            "rank": 12,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "rrf": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "preserved": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 7
+          }
+        },
+        "support reactions": {
+          "faiss": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 15
+          },
+          "bm25": {
+            "rank": 2,
+            "page": 6,
+            "chunk_id": 15
+          },
+          "rrf": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 15
+          },
+          "preserved": {
+            "rank": 1,
+            "page": 6,
+            "chunk_id": 15
+          }
+        },
+        "stresses": {
+          "faiss": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "bm25": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 1
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 0
+          },
+          "preserved": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 0
+          }
+        },
+        "moments": {
+          "faiss": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "bm25": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 1
+          },
+          "rrf": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 0
+          },
+          "preserved": {
+            "rank": 3,
+            "page": 1,
+            "chunk_id": 0
+          }
+        },
+        "displacement values remained largely unchanged": {
+          "faiss": {
+            "rank": 2,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "bm25": {
+            "rank": 12,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "rrf": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 7
+          },
+          "preserved": {
+            "rank": 6,
+            "page": 3,
+            "chunk_id": 7
+          }
+        }
+      },
+      "diagnosis": "FUSION_REGRESSION"
+    }
+  ]
+}

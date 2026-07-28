@@ -1,0 +1,229 @@
+{
+  "experiment": "hybrid_retrieval",
+  "top_k": 5,
+  "candidate_k": 10,
+  "rrf_k": 60,
+  "averages": {
+    "faiss_original": 0.0,
+    "faiss_expanded": 0.125,
+    "hybrid_original": 1.0,
+    "hybrid_expanded": 0.625
+  },
+  "best_method": "hybrid_original",
+  "results": [
+    {
+      "id": "q04",
+      "question": "What methodology was used in this study?",
+      "expanded_query": "What research methodology, study design, literature review method, data collection approach, experimental procedure, and research method were used in this study?",
+      "expected_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "faiss_original": {
+        "matched_evidence": [],
+        "missing_evidence": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "coverage": 0.0,
+        "full_evidence": false,
+        "evidence_ranks": {
+          "systematic narrative review": null,
+          "No experimental data": null
+        },
+        "retrieved_pages": [
+          1,
+          6,
+          3,
+          5,
+          6
+        ],
+        "query": "What methodology was used in this study?",
+        "method": "faiss"
+      },
+      "faiss_expanded": {
+        "matched_evidence": [],
+        "missing_evidence": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "coverage": 0.0,
+        "full_evidence": false,
+        "evidence_ranks": {
+          "systematic narrative review": null,
+          "No experimental data": null
+        },
+        "retrieved_pages": [
+          5,
+          4,
+          6,
+          6,
+          1
+        ],
+        "query": "What research methodology, study design, literature review method, data collection approach, experimental procedure, and research method were used in this study?",
+        "method": "faiss"
+      },
+      "hybrid_original": {
+        "matched_evidence": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "missing_evidence": [],
+        "coverage": 1.0,
+        "full_evidence": true,
+        "evidence_ranks": {
+          "systematic narrative review": 5,
+          "No experimental data": 5
+        },
+        "retrieved_pages": [
+          1,
+          5,
+          2,
+          5,
+          2
+        ],
+        "query": "What methodology was used in this study?",
+        "method": "hybrid"
+      },
+      "hybrid_expanded": {
+        "matched_evidence": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "missing_evidence": [],
+        "coverage": 1.0,
+        "full_evidence": true,
+        "evidence_ranks": {
+          "systematic narrative review": 4,
+          "No experimental data": 4
+        },
+        "retrieved_pages": [
+          1,
+          5,
+          4,
+          2,
+          3
+        ],
+        "query": "What research methodology, study design, literature review method, data collection approach, experimental procedure, and research method were used in this study?",
+        "method": "hybrid"
+      }
+    },
+    {
+      "id": "q08",
+      "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+      "expanded_query": "What mitigation strategies, interventions, adaptive autonomy methods, explainable AI interface designs, micro-interventions, and workload management techniques are proposed for reducing mental fatigue in human-in-the-loop AI systems?",
+      "expected_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "faiss_original": {
+        "matched_evidence": [],
+        "missing_evidence": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions",
+          "Workload Triage"
+        ],
+        "coverage": 0.0,
+        "full_evidence": false,
+        "evidence_ranks": {
+          "Adaptive Autonomy": null,
+          "XAI Interface Design": null,
+          "Micro-Interventions": null,
+          "Workload Triage": null
+        },
+        "retrieved_pages": [
+          1,
+          4,
+          2,
+          1,
+          7
+        ],
+        "query": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+        "method": "faiss"
+      },
+      "faiss_expanded": {
+        "matched_evidence": [
+          "Workload Triage"
+        ],
+        "missing_evidence": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions"
+        ],
+        "coverage": 0.25,
+        "full_evidence": false,
+        "evidence_ranks": {
+          "Adaptive Autonomy": null,
+          "XAI Interface Design": null,
+          "Micro-Interventions": null,
+          "Workload Triage": 2
+        },
+        "retrieved_pages": [
+          1,
+          6,
+          1,
+          1,
+          7
+        ],
+        "query": "What mitigation strategies, interventions, adaptive autonomy methods, explainable AI interface designs, micro-interventions, and workload management techniques are proposed for reducing mental fatigue in human-in-the-loop AI systems?",
+        "method": "faiss"
+      },
+      "hybrid_original": {
+        "matched_evidence": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions",
+          "Workload Triage"
+        ],
+        "missing_evidence": [],
+        "coverage": 1.0,
+        "full_evidence": true,
+        "evidence_ranks": {
+          "Adaptive Autonomy": 5,
+          "XAI Interface Design": 5,
+          "Micro-Interventions": 5,
+          "Workload Triage": 5
+        },
+        "retrieved_pages": [
+          1,
+          5,
+          1,
+          1,
+          6
+        ],
+        "query": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+        "method": "hybrid"
+      },
+      "hybrid_expanded": {
+        "matched_evidence": [
+          "Workload Triage"
+        ],
+        "missing_evidence": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions"
+        ],
+        "coverage": 0.25,
+        "full_evidence": false,
+        "evidence_ranks": {
+          "Adaptive Autonomy": null,
+          "XAI Interface Design": null,
+          "Micro-Interventions": null,
+          "Workload Triage": 2
+        },
+        "retrieved_pages": [
+          1,
+          6,
+          7,
+          1,
+          5
+        ],
+        "query": "What mitigation strategies, interventions, adaptive autonomy methods, explainable AI interface designs, micro-interventions, and workload management techniques are proposed for reducing mental fatigue in human-in-the-loop AI systems?",
+        "method": "hybrid"
+      }
+    }
+  ]
+}

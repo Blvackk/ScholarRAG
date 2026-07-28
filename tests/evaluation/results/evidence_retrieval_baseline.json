@@ -1,0 +1,351 @@
+{
+    "top_k": 3,
+    "answerable_questions": 10,
+    "page_metrics": {
+        "hit_at_k": 0.6,
+        "mrr": 0.55
+    },
+    "evidence_metrics": {
+        "hit_at_k": 0.6,
+        "full_evidence_at_k": 0.4,
+        "mean_coverage": 0.4916666666666666,
+        "mrr": 0.6
+    },
+    "questions": [
+        {
+            "id": "q01",
+            "question": "What is the main objective of this research paper?",
+            "category": "overview",
+            "expected_pages": [
+                1
+            ],
+            "retrieved_pages": [
+                2,
+                8,
+                2
+            ],
+            "page_hit": false,
+            "page_reciprocal_rank": 0.0,
+            "expected_evidence": [
+                "mental fatigue",
+                "human-in-the-loop",
+                "multi-agent"
+            ],
+            "matched_evidence": [
+                "mental fatigue",
+                "multi-agent"
+            ],
+            "missing_evidence": [
+                "human-in-the-loop"
+            ],
+            "evidence_coverage": 0.6666666666666666,
+            "evidence_hit": true,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q02",
+            "question": "What three types of cognitive load are discussed in the paper?",
+            "category": "concept",
+            "expected_pages": [
+                2
+            ],
+            "retrieved_pages": [
+                2,
+                2,
+                6
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 1.0,
+            "expected_evidence": [
+                "intrinsic load",
+                "extraneous load",
+                "germane load"
+            ],
+            "matched_evidence": [
+                "intrinsic load",
+                "extraneous load",
+                "germane load"
+            ],
+            "missing_evidence": [],
+            "evidence_coverage": 1.0,
+            "evidence_hit": true,
+            "full_evidence_hit": true,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q03",
+            "question": "What correlation does the paper report between information overload and fatigue?",
+            "category": "numeric",
+            "expected_pages": [
+                2
+            ],
+            "retrieved_pages": [
+                2,
+                2,
+                4
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 1.0,
+            "expected_evidence": [
+                "r = 0.905",
+                "information overload"
+            ],
+            "matched_evidence": [
+                "r = 0.905",
+                "information overload"
+            ],
+            "missing_evidence": [],
+            "evidence_coverage": 1.0,
+            "evidence_hit": true,
+            "full_evidence_hit": true,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q04",
+            "question": "What methodology was used in this study?",
+            "category": "methodology",
+            "expected_pages": [
+                2,
+                3
+            ],
+            "retrieved_pages": [
+                4,
+                1,
+                5
+            ],
+            "page_hit": false,
+            "page_reciprocal_rank": 0.0,
+            "expected_evidence": [
+                "systematic narrative review",
+                "No experimental data were collected"
+            ],
+            "matched_evidence": [],
+            "missing_evidence": [
+                "systematic narrative review",
+                "No experimental data were collected"
+            ],
+            "evidence_coverage": 0.0,
+            "evidence_hit": false,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 0.0
+        },
+        {
+            "id": "q05",
+            "question": "Which academic databases were used to source the literature?",
+            "category": "methodology",
+            "expected_pages": [
+                3
+            ],
+            "retrieved_pages": [
+                2,
+                4,
+                2
+            ],
+            "page_hit": false,
+            "page_reciprocal_rank": 0.0,
+            "expected_evidence": [
+                "IEEE Xplore",
+                "ScienceDirect",
+                "PubMed Central"
+            ],
+            "matched_evidence": [],
+            "missing_evidence": [
+                "IEEE Xplore",
+                "ScienceDirect",
+                "PubMed Central"
+            ],
+            "evidence_coverage": 0.0,
+            "evidence_hit": false,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 0.0
+        },
+        {
+            "id": "q06",
+            "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+            "category": "numeric",
+            "expected_pages": [
+                3
+            ],
+            "retrieved_pages": [
+                3,
+                7,
+                4
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 1.0,
+            "expected_evidence": [
+                "39%",
+                "more than three concurrent AI agents"
+            ],
+            "matched_evidence": [
+                "39%",
+                "more than three concurrent AI agents"
+            ],
+            "missing_evidence": [],
+            "evidence_coverage": 1.0,
+            "evidence_hit": true,
+            "full_evidence_hit": true,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q07",
+            "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+            "category": "research_gap",
+            "expected_pages": [
+                4,
+                5
+            ],
+            "retrieved_pages": [
+                2,
+                4,
+                2
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 0.5,
+            "expected_evidence": [
+                "Empirical Validation",
+                "Longitudinal Effects",
+                "MAS Supervision",
+                "Cultural/Contextual Factors"
+            ],
+            "matched_evidence": [],
+            "missing_evidence": [
+                "Empirical Validation",
+                "Longitudinal Effects",
+                "MAS Supervision",
+                "Cultural/Contextual Factors"
+            ],
+            "evidence_coverage": 0.0,
+            "evidence_hit": false,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 0.0
+        },
+        {
+            "id": "q08",
+            "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+            "category": "mitigation",
+            "expected_pages": [
+                5,
+                6
+            ],
+            "retrieved_pages": [
+                4,
+                1,
+                2
+            ],
+            "page_hit": false,
+            "page_reciprocal_rank": 0.0,
+            "expected_evidence": [
+                "Adaptive Autonomy",
+                "XAI Interface Design",
+                "Micro-Interventions",
+                "Workload Triage"
+            ],
+            "matched_evidence": [],
+            "missing_evidence": [
+                "Adaptive Autonomy",
+                "XAI Interface Design",
+                "Micro-Interventions",
+                "Workload Triage"
+            ],
+            "evidence_coverage": 0.0,
+            "evidence_hit": false,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 0.0
+        },
+        {
+            "id": "q09",
+            "question": "What effect does workload triage have on supervisory error rates?",
+            "category": "numeric",
+            "expected_pages": [
+                6
+            ],
+            "retrieved_pages": [
+                6,
+                4,
+                3
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 1.0,
+            "expected_evidence": [
+                "39% supervisory error reduction",
+                "Workload Triage"
+            ],
+            "matched_evidence": [
+                "39% supervisory error reduction",
+                "Workload Triage"
+            ],
+            "missing_evidence": [],
+            "evidence_coverage": 1.0,
+            "evidence_hit": true,
+            "full_evidence_hit": true,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q10",
+            "question": "What future research directions does the paper recommend?",
+            "category": "future_work",
+            "expected_pages": [
+                6
+            ],
+            "retrieved_pages": [
+                6,
+                6,
+                5
+            ],
+            "page_hit": true,
+            "page_reciprocal_rank": 1.0,
+            "expected_evidence": [
+                "longitudinal",
+                "hybrid autonomy",
+                "domain-specific",
+                "fatigue estimation"
+            ],
+            "matched_evidence": [
+                "fatigue estimation"
+            ],
+            "missing_evidence": [
+                "longitudinal",
+                "hybrid autonomy",
+                "domain-specific"
+            ],
+            "evidence_coverage": 0.25,
+            "evidence_hit": true,
+            "full_evidence_hit": false,
+            "evidence_reciprocal_rank": 1.0
+        },
+        {
+            "id": "q11",
+            "question": "Which GPU model was used to train the proposed neural network?",
+            "category": "unanswerable",
+            "expected_pages": [],
+            "expected_evidence": [],
+            "retrieved_pages": [],
+            "page_hit": null,
+            "page_reciprocal_rank": null,
+            "matched_evidence": [],
+            "missing_evidence": [],
+            "evidence_coverage": null,
+            "evidence_hit": null,
+            "full_evidence_hit": null,
+            "evidence_reciprocal_rank": null
+        },
+        {
+            "id": "q12",
+            "question": "What accuracy did the proposed machine learning model achieve on the test dataset?",
+            "category": "unanswerable",
+            "expected_pages": [],
+            "expected_evidence": [],
+            "retrieved_pages": [],
+            "page_hit": null,
+            "page_reciprocal_rank": null,
+            "matched_evidence": [],
+            "missing_evidence": [],
+            "evidence_coverage": null,
+            "evidence_hit": null,
+            "full_evidence_hit": null,
+            "evidence_reciprocal_rank": null
+        }
+    ]
+}

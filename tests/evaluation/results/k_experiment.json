@@ -1,0 +1,600 @@
+[
+    {
+        "k": 1,
+        "answerable_questions": 10,
+        "evidence_hit_at_k": 0.6,
+        "full_evidence_at_k": 0.4,
+        "mean_evidence_coverage": 0.4833333333333333,
+        "evidence_mrr": 0.6,
+        "questions": [
+            {
+                "id": "q01",
+                "coverage": 0.3333333333333333,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "mental fatigue"
+                ]
+            },
+            {
+                "id": "q02",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "intrinsic load",
+                    "extraneous load",
+                    "germane load"
+                ]
+            },
+            {
+                "id": "q03",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "r = 0.905",
+                    "information overload"
+                ]
+            },
+            {
+                "id": "q04",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q05",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q06",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39%",
+                    "more than three concurrent AI agents"
+                ]
+            },
+            {
+                "id": "q07",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q08",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q09",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39% supervisory error reduction",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q10",
+                "coverage": 0.5,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "generalist populations",
+                    "fatigue estimation"
+                ]
+            }
+        ]
+    },
+    {
+        "k": 3,
+        "answerable_questions": 10,
+        "evidence_hit_at_k": 0.6,
+        "full_evidence_at_k": 0.4,
+        "mean_evidence_coverage": 0.5166666666666666,
+        "evidence_mrr": 0.6,
+        "questions": [
+            {
+                "id": "q01",
+                "coverage": 0.6666666666666666,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "mental fatigue",
+                    "multi-agent"
+                ]
+            },
+            {
+                "id": "q02",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "intrinsic load",
+                    "extraneous load",
+                    "germane load"
+                ]
+            },
+            {
+                "id": "q03",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "r = 0.905",
+                    "information overload"
+                ]
+            },
+            {
+                "id": "q04",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q05",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q06",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39%",
+                    "more than three concurrent AI agents"
+                ]
+            },
+            {
+                "id": "q07",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q08",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q09",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39% supervisory error reduction",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q10",
+                "coverage": 0.5,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "generalist populations",
+                    "fatigue estimation"
+                ]
+            }
+        ]
+    },
+    {
+        "k": 5,
+        "answerable_questions": 10,
+        "evidence_hit_at_k": 0.9,
+        "full_evidence_at_k": 0.8,
+        "mean_evidence_coverage": 0.875,
+        "evidence_mrr": 0.665,
+        "questions": [
+            {
+                "id": "q01",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "mental fatigue",
+                    "human-in-the-loop",
+                    "multi-agent"
+                ]
+            },
+            {
+                "id": "q02",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "intrinsic load",
+                    "extraneous load",
+                    "germane load"
+                ]
+            },
+            {
+                "id": "q03",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "r = 0.905",
+                    "information overload"
+                ]
+            },
+            {
+                "id": "q04",
+                "coverage": 0.0,
+                "evidence_hit": false,
+                "full_evidence_hit": false,
+                "first_evidence_rank": null,
+                "matched_evidence": []
+            },
+            {
+                "id": "q05",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "IEEE Xplore",
+                    "ScienceDirect",
+                    "PubMed Central"
+                ]
+            },
+            {
+                "id": "q06",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39%",
+                    "more than three concurrent AI agents"
+                ]
+            },
+            {
+                "id": "q07",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 4,
+                "matched_evidence": [
+                    "Empirical Validation",
+                    "Longitudinal Effects",
+                    "MAS Supervision",
+                    "Cultural/Contextual Factors"
+                ]
+            },
+            {
+                "id": "q08",
+                "coverage": 0.75,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "XAI Interface Design",
+                    "Micro-Interventions",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q09",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39% supervisory error reduction",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q10",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "longitudinal",
+                    "hybrid autonomy",
+                    "generalist populations",
+                    "fatigue estimation"
+                ]
+            }
+        ]
+    },
+    {
+        "k": 8,
+        "answerable_questions": 10,
+        "evidence_hit_at_k": 1.0,
+        "full_evidence_at_k": 0.8,
+        "mean_evidence_coverage": 0.925,
+        "evidence_mrr": 0.6792857142857144,
+        "questions": [
+            {
+                "id": "q01",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "mental fatigue",
+                    "human-in-the-loop",
+                    "multi-agent"
+                ]
+            },
+            {
+                "id": "q02",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "intrinsic load",
+                    "extraneous load",
+                    "germane load"
+                ]
+            },
+            {
+                "id": "q03",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "r = 0.905",
+                    "information overload"
+                ]
+            },
+            {
+                "id": "q04",
+                "coverage": 0.5,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 7,
+                "matched_evidence": [
+                    "systematic narrative review"
+                ]
+            },
+            {
+                "id": "q05",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "IEEE Xplore",
+                    "ScienceDirect",
+                    "PubMed Central"
+                ]
+            },
+            {
+                "id": "q06",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39%",
+                    "more than three concurrent AI agents"
+                ]
+            },
+            {
+                "id": "q07",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 4,
+                "matched_evidence": [
+                    "Empirical Validation",
+                    "Longitudinal Effects",
+                    "MAS Supervision",
+                    "Cultural/Contextual Factors"
+                ]
+            },
+            {
+                "id": "q08",
+                "coverage": 0.75,
+                "evidence_hit": true,
+                "full_evidence_hit": false,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "XAI Interface Design",
+                    "Micro-Interventions",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q09",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39% supervisory error reduction",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q10",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "longitudinal",
+                    "hybrid autonomy",
+                    "generalist populations",
+                    "fatigue estimation"
+                ]
+            }
+        ]
+    },
+    {
+        "k": 10,
+        "answerable_questions": 10,
+        "evidence_hit_at_k": 1.0,
+        "full_evidence_at_k": 1.0,
+        "mean_evidence_coverage": 1.0,
+        "evidence_mrr": 0.6792857142857144,
+        "questions": [
+            {
+                "id": "q01",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "mental fatigue",
+                    "human-in-the-loop",
+                    "multi-agent"
+                ]
+            },
+            {
+                "id": "q02",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "intrinsic load",
+                    "extraneous load",
+                    "germane load"
+                ]
+            },
+            {
+                "id": "q03",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "r = 0.905",
+                    "information overload"
+                ]
+            },
+            {
+                "id": "q04",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 7,
+                "matched_evidence": [
+                    "systematic narrative review",
+                    "No experimental data"
+                ]
+            },
+            {
+                "id": "q05",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "IEEE Xplore",
+                    "ScienceDirect",
+                    "PubMed Central"
+                ]
+            },
+            {
+                "id": "q06",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39%",
+                    "more than three concurrent AI agents"
+                ]
+            },
+            {
+                "id": "q07",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 4,
+                "matched_evidence": [
+                    "Empirical Validation",
+                    "Longitudinal Effects",
+                    "MAS Supervision",
+                    "Cultural/Contextual Factors"
+                ]
+            },
+            {
+                "id": "q08",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 5,
+                "matched_evidence": [
+                    "Adaptive Autonomy",
+                    "XAI Interface Design",
+                    "Micro-Interventions",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q09",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "39% supervisory error reduction",
+                    "Workload Triage"
+                ]
+            },
+            {
+                "id": "q10",
+                "coverage": 1.0,
+                "evidence_hit": true,
+                "full_evidence_hit": true,
+                "first_evidence_rank": 1,
+                "matched_evidence": [
+                    "longitudinal",
+                    "hybrid autonomy",
+                    "generalist populations",
+                    "fatigue estimation"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,227 @@
+{
+  "test": "hybrid_generation_smoke_test",
+  "configuration": {
+    "retrieval": "FAISS + BM25 + RRF",
+    "candidate_k": 10,
+    "top_k": 5
+  },
+  "summary": {
+    "questions": 5,
+    "answerable_questions": 3,
+    "mean_answer_coverage": 0.6666666666666666,
+    "full_answers": 1,
+    "unanswerable_questions": 2,
+    "correct_refusals": 2,
+    "refusal_accuracy": 1.0
+  },
+  "results": [
+    {
+      "id": "p01_q04",
+      "paper": "paper_01.pdf",
+      "question": "What methodology was used in this study?",
+      "category": "methodology",
+      "expected_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "answer": "This study employs a systematic narrative review methodology to synthesize existing literature on mental fatigue within human-in-the-loop AI systems, with particular emphasis on multi -agent supervision contexts.",
+      "matched_evidence": [
+        "systematic narrative review"
+      ],
+      "missing_evidence": [
+        "No experimental data"
+      ],
+      "coverage": 0.5,
+      "unanswerable": false,
+      "refusal": false,
+      "generation_time_seconds": 76.041,
+      "sources": [
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 2
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p01_q08",
+      "paper": "paper_01.pdf",
+      "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+      "category": "mitigation",
+      "expected_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "answer": "Adaptive autonomy signal-based dynamic task delegation 33 40% verification reduction [9] XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9] Micro-Interventions Fatigue-triggered automated break prompts Attenuation of momentary fatigue [9] Workload Triage NLP-based urgency-ranked task sequencing 39% supervisory error reduction [9]",
+      "matched_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "missing_evidence": [],
+      "coverage": 1.0,
+      "unanswerable": false,
+      "refusal": false,
+      "generation_time_seconds": 55.384,
+      "sources": [
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "p01_q10",
+      "paper": "paper_01.pdf",
+      "question": "What future research directions does the paper recommend?",
+      "category": "future_work",
+      "expected_evidence": [
+        "longitudinal",
+        "hybrid autonomy",
+        "generalist populations",
+        "fatigue estimation"
+      ],
+      "answer": "The paper recommends the following future research directions:\n\n* **Longitudinal studies:**  Investigate the effects of sustained AI oversight over weeks and months, not just single sessions or surveys.\n* **Fatigue biomarkers:** Track fatigue biomarkers like EEG, cortisol, heart rate variability across real operational periods in authentic MAS supervision contexts. \n* **Hybrid autonomy:** Investigate the engineering and human factors challenges of hybrid autonomy systems that dynamically redistribute decision-making between humans and agents based on operator state.\n* **Domain-specific research:** Examine fatigue in domains where AI supervision matters most, such as healthcare, air traffic management, financial oversight, and emergency response.",
+      "matched_evidence": [
+        "longitudinal",
+        "hybrid autonomy"
+      ],
+      "missing_evidence": [
+        "generalist populations",
+        "fatigue estimation"
+      ],
+      "coverage": 0.5,
+      "unanswerable": false,
+      "refusal": false,
+      "generation_time_seconds": 63.248,
+      "sources": [
+        {
+          "source": "paper_01.pdf",
+          "page": 6
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 6
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 3
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p01_q11",
+      "paper": "paper_01.pdf",
+      "question": "Which GPU model was used to train the proposed neural network?",
+      "category": "unanswerable",
+      "expected_evidence": [],
+      "answer": "I couldn't find that information in the uploaded research paper.",
+      "matched_evidence": [],
+      "missing_evidence": [],
+      "coverage": null,
+      "unanswerable": true,
+      "refusal": true,
+      "generation_time_seconds": 38.74,
+      "sources": [
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 2
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p01_q12",
+      "paper": "paper_01.pdf",
+      "question": "What accuracy did the proposed machine learning model achieve on the test dataset?",
+      "category": "unanswerable",
+      "expected_evidence": [],
+      "answer": "I couldn't find that information in the uploaded research paper.",
+      "matched_evidence": [],
+      "missing_evidence": [],
+      "coverage": null,
+      "unanswerable": true,
+      "refusal": true,
+      "generation_time_seconds": 42.066,
+      "sources": [
+        {
+          "source": "paper_01.pdf",
+          "page": 3
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 1
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 5
+        },
+        {
+          "source": "paper_01.pdf",
+          "page": 2
+        }
+      ]
+    }
+  ]
+}

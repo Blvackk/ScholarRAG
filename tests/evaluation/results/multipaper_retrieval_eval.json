@@ -1,0 +1,2303 @@
+{
+  "configuration": {
+    "chunk_size": 2048,
+    "chunk_overlap": 512,
+    "top_k": 5,
+    "candidate_k": 10,
+    "rrf_k": 60
+  },
+  "dataset": {
+    "total_questions": 48,
+    "answerable_questions": 40,
+    "papers": [
+      "paper_01.pdf",
+      "paper_02.pdf",
+      "paper_03.pdf",
+      "paper_04.pdf"
+    ]
+  },
+  "global": {
+    "faiss": {
+      "questions": 40,
+      "hit_at_5": 0.875,
+      "full_at_5": 0.85,
+      "coverage": 0.86875,
+      "mrr": 0.77125
+    },
+    "rrf": {
+      "questions": 40,
+      "hit_at_5": 0.925,
+      "full_at_5": 0.9,
+      "coverage": 0.915,
+      "mrr": 0.8208333333333332
+    },
+    "preserved": {
+      "questions": 40,
+      "hit_at_5": 0.925,
+      "full_at_5": 0.9,
+      "coverage": 0.915,
+      "mrr": 0.8125
+    }
+  },
+  "per_paper": {
+    "paper_01.pdf": {
+      "faiss": {
+        "questions": 10,
+        "hit_at_5": 0.9,
+        "full_at_5": 0.8,
+        "coverage": 0.875,
+        "mrr": 0.665
+      },
+      "rrf": {
+        "questions": 10,
+        "hit_at_5": 0.9,
+        "full_at_5": 0.9,
+        "coverage": 0.9,
+        "mrr": 0.8
+      },
+      "preserved": {
+        "questions": 10,
+        "hit_at_5": 0.9,
+        "full_at_5": 0.9,
+        "coverage": 0.9,
+        "mrr": 0.7333333333333334
+      }
+    },
+    "paper_02.pdf": {
+      "faiss": {
+        "questions": 10,
+        "hit_at_5": 0.9,
+        "full_at_5": 0.9,
+        "coverage": 0.9,
+        "mrr": 0.85
+      },
+      "rrf": {
+        "questions": 10,
+        "hit_at_5": 1.0,
+        "full_at_5": 1.0,
+        "coverage": 1.0,
+        "mrr": 0.8833333333333334
+      },
+      "preserved": {
+        "questions": 10,
+        "hit_at_5": 1.0,
+        "full_at_5": 1.0,
+        "coverage": 1.0,
+        "mrr": 0.8833333333333334
+      }
+    },
+    "paper_03.pdf": {
+      "faiss": {
+        "questions": 10,
+        "hit_at_5": 0.7,
+        "full_at_5": 0.7,
+        "coverage": 0.7,
+        "mrr": 0.7
+      },
+      "rrf": {
+        "questions": 10,
+        "hit_at_5": 0.8,
+        "full_at_5": 0.8,
+        "coverage": 0.8,
+        "mrr": 0.65
+      },
+      "preserved": {
+        "questions": 10,
+        "hit_at_5": 0.8,
+        "full_at_5": 0.8,
+        "coverage": 0.8,
+        "mrr": 0.75
+      }
+    },
+    "paper_04.pdf": {
+      "faiss": {
+        "questions": 10,
+        "hit_at_5": 1.0,
+        "full_at_5": 1.0,
+        "coverage": 1.0,
+        "mrr": 0.8699999999999999
+      },
+      "rrf": {
+        "questions": 10,
+        "hit_at_5": 1.0,
+        "full_at_5": 0.9,
+        "coverage": 0.96,
+        "mrr": 0.95
+      },
+      "preserved": {
+        "questions": 10,
+        "hit_at_5": 1.0,
+        "full_at_5": 0.9,
+        "coverage": 0.96,
+        "mrr": 0.8833333333333332
+      }
+    }
+  },
+  "comparison": {
+    "improved": [
+      {
+        "id": "p01_q04",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 0.0,
+        "preserved_coverage": 1.0,
+        "delta": 1.0
+      },
+      {
+        "id": "p02_q10",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 0.0,
+        "preserved_coverage": 1.0,
+        "delta": 1.0
+      },
+      {
+        "id": "p03_q09",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 0.0,
+        "preserved_coverage": 1.0,
+        "delta": 1.0
+      }
+    ],
+    "regressed": [
+      {
+        "id": "p01_q08",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 0.75,
+        "preserved_coverage": 0.0,
+        "delta": -0.75
+      },
+      {
+        "id": "p04_q07",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 0.6,
+        "delta": -0.4
+      }
+    ],
+    "unchanged": [
+      {
+        "id": "p01_q01",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q02",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q03",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q05",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q06",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q07",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q09",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p01_q10",
+        "paper": "paper_01.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q01",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q02",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q03",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q04",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q05",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q06",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q07",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q08",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p02_q09",
+        "paper": "paper_02.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q01",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q02",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q03",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q04",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q05",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q06",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 0.0,
+        "preserved_coverage": 0.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q07",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q08",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 0.0,
+        "preserved_coverage": 0.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p03_q10",
+        "paper": "paper_03.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q01",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q02",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q03",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q04",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q05",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q06",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q08",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q09",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      },
+      {
+        "id": "p04_q10",
+        "paper": "paper_04.pdf",
+        "faiss_coverage": 1.0,
+        "preserved_coverage": 1.0,
+        "delta": 0.0
+      }
+    ]
+  },
+  "winner": "RRF",
+  "decision": "RRF_RECOMMENDED",
+  "questions": [
+    {
+      "id": "p01_q01",
+      "paper": "paper_01.pdf",
+      "question": "What is the main objective of this research paper?",
+      "expected_evidence": [
+        "mental fatigue",
+        "human-in-the-loop",
+        "multi-agent"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "mental fatigue",
+          "human-in-the-loop",
+          "multi-agent"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "mental fatigue",
+          "human-in-the-loop",
+          "multi-agent"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "mental fatigue",
+          "human-in-the-loop",
+          "multi-agent"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q02",
+      "paper": "paper_01.pdf",
+      "question": "What three types of cognitive load are discussed in the paper?",
+      "expected_evidence": [
+        "intrinsic load",
+        "extraneous load",
+        "germane load"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "intrinsic load",
+          "extraneous load",
+          "germane load"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "intrinsic load",
+          "extraneous load",
+          "germane load"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "intrinsic load",
+          "extraneous load",
+          "germane load"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q03",
+      "paper": "paper_01.pdf",
+      "question": "What correlation does the paper report between information overload and fatigue?",
+      "expected_evidence": [
+        "r = 0.905",
+        "information overload"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "r = 0.905",
+          "information overload"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "r = 0.905",
+          "information overload"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "r = 0.905",
+          "information overload"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q04",
+      "paper": "paper_01.pdf",
+      "question": "What methodology was used in this study?",
+      "expected_evidence": [
+        "systematic narrative review",
+        "No experimental data"
+      ],
+      "faiss": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "systematic narrative review",
+          "No experimental data"
+        ]
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "systematic narrative review",
+          "No experimental data"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q05",
+      "paper": "paper_01.pdf",
+      "question": "Which academic databases were used to source the literature?",
+      "expected_evidence": [
+        "IEEE Xplore",
+        "ScienceDirect",
+        "PubMed Central"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.2,
+        "matched": [
+          "IEEE Xplore",
+          "ScienceDirect",
+          "PubMed Central"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "IEEE Xplore",
+          "ScienceDirect",
+          "PubMed Central"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.3333333333333333,
+        "matched": [
+          "IEEE Xplore",
+          "ScienceDirect",
+          "PubMed Central"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q06",
+      "paper": "paper_01.pdf",
+      "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+      "expected_evidence": [
+        "39%",
+        "more than three concurrent AI agents"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39%",
+          "more than three concurrent AI agents"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39%",
+          "more than three concurrent AI agents"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39%",
+          "more than three concurrent AI agents"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q07",
+      "paper": "paper_01.pdf",
+      "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+      "expected_evidence": [
+        "Empirical Validation",
+        "Longitudinal Effects",
+        "MAS Supervision",
+        "Cultural/Contextual Factors"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.25,
+        "matched": [
+          "Empirical Validation",
+          "Longitudinal Effects",
+          "MAS Supervision",
+          "Cultural/Contextual Factors"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Empirical Validation",
+          "Longitudinal Effects",
+          "MAS Supervision",
+          "Cultural/Contextual Factors"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "Empirical Validation",
+          "Longitudinal Effects",
+          "MAS Supervision",
+          "Cultural/Contextual Factors"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q08",
+      "paper": "paper_01.pdf",
+      "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+      "expected_evidence": [
+        "Adaptive Autonomy",
+        "XAI Interface Design",
+        "Micro-Interventions",
+        "Workload Triage"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": false,
+        "coverage": 0.75,
+        "rr": 0.2,
+        "matched": [
+          "XAI Interface Design",
+          "Micro-Interventions",
+          "Workload Triage"
+        ],
+        "missing": [
+          "Adaptive Autonomy"
+        ]
+      },
+      "rrf": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions",
+          "Workload Triage"
+        ]
+      },
+      "preserved": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "Adaptive Autonomy",
+          "XAI Interface Design",
+          "Micro-Interventions",
+          "Workload Triage"
+        ]
+      }
+    },
+    {
+      "id": "p01_q09",
+      "paper": "paper_01.pdf",
+      "question": "What effect does workload triage have on supervisory error rates?",
+      "expected_evidence": [
+        "39% supervisory error reduction",
+        "Workload Triage"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39% supervisory error reduction",
+          "Workload Triage"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39% supervisory error reduction",
+          "Workload Triage"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "39% supervisory error reduction",
+          "Workload Triage"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p01_q10",
+      "paper": "paper_01.pdf",
+      "question": "What future research directions does the paper recommend?",
+      "expected_evidence": [
+        "longitudinal",
+        "hybrid autonomy",
+        "generalist populations",
+        "fatigue estimation"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "longitudinal",
+          "hybrid autonomy",
+          "generalist populations",
+          "fatigue estimation"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "longitudinal",
+          "hybrid autonomy",
+          "generalist populations",
+          "fatigue estimation"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "longitudinal",
+          "hybrid autonomy",
+          "generalist populations",
+          "fatigue estimation"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q01",
+      "paper": "paper_02.pdf",
+      "question": "What is the main objective of the proposed fake news detection system?",
+      "expected_evidence": [
+        "fake news detection",
+        "machine learning",
+        "Natural Language Processing"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "fake news detection",
+          "machine learning",
+          "Natural Language Processing"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "fake news detection",
+          "machine learning",
+          "Natural Language Processing"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "fake news detection",
+          "machine learning",
+          "Natural Language Processing"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q02",
+      "paper": "paper_02.pdf",
+      "question": "How many articles were collected, and how were they distributed between fake and authentic news?",
+      "expected_evidence": [
+        "44,898 articles",
+        "23,481 fake articles",
+        "21,417 authentic articles"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "44,898 articles",
+          "23,481 fake articles",
+          "21,417 authentic articles"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "44,898 articles",
+          "23,481 fake articles",
+          "21,417 authentic articles"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "44,898 articles",
+          "23,481 fake articles",
+          "21,417 authentic articles"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q03",
+      "paper": "paper_02.pdf",
+      "question": "What sources were used to collect authentic and fabricated news articles?",
+      "expected_evidence": [
+        "Reuters news agency",
+        "independent fact checking organizations",
+        "misinformation publishers"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Reuters news agency",
+          "independent fact checking organizations",
+          "misinformation publishers"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Reuters news agency",
+          "independent fact checking organizations",
+          "misinformation publishers"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Reuters news agency",
+          "independent fact checking organizations",
+          "misinformation publishers"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q04",
+      "paper": "paper_02.pdf",
+      "question": "What feature extraction method and number of features were used?",
+      "expected_evidence": [
+        "TF-IDF",
+        "5,000 features"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "TF-IDF",
+          "5,000 features"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "TF-IDF",
+          "5,000 features"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "TF-IDF",
+          "5,000 features"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q05",
+      "paper": "paper_02.pdf",
+      "question": "Which machine learning algorithm was selected for fake news classification?",
+      "expected_evidence": [
+        "Logistic Regression"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Logistic Regression"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Logistic Regression"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Logistic Regression"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q06",
+      "paper": "paper_02.pdf",
+      "question": "How was the dataset divided into training and testing sets?",
+      "expected_evidence": [
+        "35,918 articles",
+        "80%",
+        "20%",
+        "8,980 articles"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "35,918 articles",
+          "80%",
+          "20%",
+          "8,980 articles"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "35,918 articles",
+          "80%",
+          "20%",
+          "8,980 articles"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "35,918 articles",
+          "80%",
+          "20%",
+          "8,980 articles"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q07",
+      "paper": "paper_02.pdf",
+      "question": "What accuracy did the Logistic Regression classifier achieve on the test set?",
+      "expected_evidence": [
+        "98.64%",
+        "8,858",
+        "8,980"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "98.64%",
+          "8,858",
+          "8,980"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "98.64%",
+          "8,858",
+          "8,980"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "98.64%",
+          "8,858",
+          "8,980"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q08",
+      "paper": "paper_02.pdf",
+      "question": "What were the cross-validation results of the fake news classifier?",
+      "expected_evidence": [
+        "5",
+        "98.52%",
+        "0.31%"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "5",
+          "98.52%",
+          "0.31%"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "5",
+          "98.52%",
+          "0.31%"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "5",
+          "98.52%",
+          "0.31%"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q09",
+      "paper": "paper_02.pdf",
+      "question": "What computational performance and deployment characteristics are reported for the model?",
+      "expected_evidence": [
+        "95 milliseconds",
+        "12.4 MB",
+        "45-second training time"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "95 milliseconds",
+          "12.4 MB",
+          "45-second training time"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "95 milliseconds",
+          "12.4 MB",
+          "45-second training time"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "95 milliseconds",
+          "12.4 MB",
+          "45-second training time"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p02_q10",
+      "paper": "paper_02.pdf",
+      "question": "Why should the fake news detection system be used as decision support rather than the final determinant of truth?",
+      "expected_evidence": [
+        "decision support system",
+        "human judgment",
+        "borderline cases"
+      ],
+      "faiss": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "decision support system",
+          "human judgment",
+          "borderline cases"
+        ]
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.3333333333333333,
+        "matched": [
+          "decision support system",
+          "human judgment",
+          "borderline cases"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.3333333333333333,
+        "matched": [
+          "decision support system",
+          "human judgment",
+          "borderline cases"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q01",
+      "paper": "paper_03.pdf",
+      "question": "What is the main objective of the Adaptive Headlight System?",
+      "expected_evidence": [
+        "night-time driving safety",
+        "automatically adjusts headlights",
+        "reduce glare"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "night-time driving safety",
+          "automatically adjusts headlights",
+          "reduce glare"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "night-time driving safety",
+          "automatically adjusts headlights",
+          "reduce glare"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "night-time driving safety",
+          "automatically adjusts headlights",
+          "reduce glare"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q02",
+      "paper": "paper_03.pdf",
+      "question": "What three main features are provided by the Adaptive Headlight System?",
+      "expected_evidence": [
+        "Automatic Dimming System",
+        "Steering Based Adjustment",
+        "Manual Override"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Automatic Dimming System",
+          "Steering Based Adjustment",
+          "Manual Override"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Automatic Dimming System",
+          "Steering Based Adjustment",
+          "Manual Override"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Automatic Dimming System",
+          "Steering Based Adjustment",
+          "Manual Override"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q03",
+      "paper": "paper_03.pdf",
+      "question": "How does the automatic dimming module detect and respond to an oncoming vehicle?",
+      "expected_evidence": [
+        "LDR",
+        "threshold",
+        "relay",
+        "low beam"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "threshold",
+          "relay",
+          "low beam"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "threshold",
+          "relay",
+          "low beam"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "threshold",
+          "relay",
+          "low beam"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q04",
+      "paper": "paper_03.pdf",
+      "question": "What components are used in the automatic headlight dimming module?",
+      "expected_evidence": [
+        "LDR",
+        "op-amp",
+        "BC547",
+        "relay"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "op-amp",
+          "BC547",
+          "relay"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "op-amp",
+          "BC547",
+          "relay"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "LDR",
+          "op-amp",
+          "BC547",
+          "relay"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q05",
+      "paper": "paper_03.pdf",
+      "question": "How does the steering-based headlight adjustment module work?",
+      "expected_evidence": [
+        "potentiometer",
+        "555 timer",
+        "PWM",
+        "servo motor"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "potentiometer",
+          "555 timer",
+          "PWM",
+          "servo motor"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "potentiometer",
+          "555 timer",
+          "PWM",
+          "servo motor"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "potentiometer",
+          "555 timer",
+          "PWM",
+          "servo motor"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q06",
+      "paper": "paper_03.pdf",
+      "question": "Which timer IC and servo motor are used in the steering-based adjustment system?",
+      "expected_evidence": [
+        "NE555 Timer IC",
+        "SG90 Servo Motor"
+      ],
+      "faiss": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "NE555 Timer IC",
+          "SG90 Servo Motor"
+        ]
+      },
+      "rrf": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "NE555 Timer IC",
+          "SG90 Servo Motor"
+        ]
+      },
+      "preserved": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "NE555 Timer IC",
+          "SG90 Servo Motor"
+        ]
+      }
+    },
+    {
+      "id": "p03_q07",
+      "paper": "paper_03.pdf",
+      "question": "What role does the manual override switch play in the headlight system?",
+      "expected_evidence": [
+        "override the automation",
+        "high beam"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "override the automation",
+          "high beam"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "override the automation",
+          "high beam"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "override the automation",
+          "high beam"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q08",
+      "paper": "paper_03.pdf",
+      "question": "How does the LDR operate in the Adaptive Headlight System?",
+      "expected_evidence": [
+        "photoconductivity",
+        "resistance decreases",
+        "bright light"
+      ],
+      "faiss": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "photoconductivity",
+          "resistance decreases",
+          "bright light"
+        ]
+      },
+      "rrf": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "photoconductivity",
+          "resistance decreases",
+          "bright light"
+        ]
+      },
+      "preserved": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "photoconductivity",
+          "resistance decreases",
+          "bright light"
+        ]
+      }
+    },
+    {
+      "id": "p03_q09",
+      "paper": "paper_03.pdf",
+      "question": "What were the results of testing the implemented Adaptive Headlight System?",
+      "expected_evidence": [
+        "tested successfully",
+        "breadboard",
+        "PCB",
+        "reliable performance"
+      ],
+      "faiss": {
+        "hit": false,
+        "full": false,
+        "coverage": 0.0,
+        "rr": 0.0,
+        "matched": [],
+        "missing": [
+          "tested successfully",
+          "breadboard",
+          "PCB",
+          "reliable performance"
+        ]
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "tested successfully",
+          "breadboard",
+          "PCB",
+          "reliable performance"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "tested successfully",
+          "breadboard",
+          "PCB",
+          "reliable performance"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p03_q10",
+      "paper": "paper_03.pdf",
+      "question": "Why does the paper argue that an analog adaptive headlight system is useful for older vehicles?",
+      "expected_evidence": [
+        "analog system",
+        "cost efficient",
+        "older vehicles"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "analog system",
+          "cost efficient",
+          "older vehicles"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "analog system",
+          "cost efficient",
+          "older vehicles"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "analog system",
+          "cost efficient",
+          "older vehicles"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q01",
+      "paper": "paper_04.pdf",
+      "question": "What is the main objective of the underground water tank study?",
+      "expected_evidence": [
+        "rectangular",
+        "circular",
+        "static loading",
+        "Earthquake Zone-III"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular",
+          "circular",
+          "static loading",
+          "Earthquake Zone-III"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular",
+          "circular",
+          "static loading",
+          "Earthquake Zone-III"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular",
+          "circular",
+          "static loading",
+          "Earthquake Zone-III"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q02",
+      "paper": "paper_04.pdf",
+      "question": "How many analytical models were developed and which software was used?",
+      "expected_evidence": [
+        "Twenty",
+        "STAAD.Pro"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Twenty",
+          "STAAD.Pro"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Twenty",
+          "STAAD.Pro"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Twenty",
+          "STAAD.Pro"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q03",
+      "paper": "paper_04.pdf",
+      "question": "Into what four groups were the water tank models divided?",
+      "expected_evidence": [
+        "Rectangular Tanks under Static Loading",
+        "Circular Tanks under Static Loading",
+        "Rectangular Tanks under Earthquake Zone-III Loading",
+        "Circular Tanks under Earthquake Zone-III Loading"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Rectangular Tanks under Static Loading",
+          "Circular Tanks under Static Loading",
+          "Rectangular Tanks under Earthquake Zone-III Loading",
+          "Circular Tanks under Earthquake Zone-III Loading"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Rectangular Tanks under Static Loading",
+          "Circular Tanks under Static Loading",
+          "Rectangular Tanks under Earthquake Zone-III Loading",
+          "Circular Tanks under Earthquake Zone-III Loading"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Rectangular Tanks under Static Loading",
+          "Circular Tanks under Static Loading",
+          "Rectangular Tanks under Earthquake Zone-III Loading",
+          "Circular Tanks under Earthquake Zone-III Loading"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q04",
+      "paper": "paper_04.pdf",
+      "question": "What loading conditions and structural responses were considered in the analysis?",
+      "expected_evidence": [
+        "self-weight",
+        "hydrostatic pressure",
+        "earthquake loads",
+        "displacement",
+        "support reactions"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "self-weight",
+          "hydrostatic pressure",
+          "earthquake loads",
+          "displacement",
+          "support reactions"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "self-weight",
+          "hydrostatic pressure",
+          "earthquake loads",
+          "displacement",
+          "support reactions"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "self-weight",
+          "hydrostatic pressure",
+          "earthquake loads",
+          "displacement",
+          "support reactions"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q05",
+      "paper": "paper_04.pdf",
+      "question": "Which models recorded the lowest and highest displacement values?",
+      "expected_evidence": [
+        "1.879 mm",
+        "Models 6 and 16",
+        "57.238 mm",
+        "Models 9 and 19"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.2,
+        "matched": [
+          "1.879 mm",
+          "Models 6 and 16",
+          "57.238 mm",
+          "Models 9 and 19"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "1.879 mm",
+          "Models 6 and 16",
+          "57.238 mm",
+          "Models 9 and 19"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.3333333333333333,
+        "matched": [
+          "1.879 mm",
+          "Models 6 and 16",
+          "57.238 mm",
+          "Models 9 and 19"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q06",
+      "paper": "paper_04.pdf",
+      "question": "How did increasing wall thickness affect displacement in the rectangular tanks?",
+      "expected_evidence": [
+        "88.54%",
+        "87.33%",
+        "reduced displacement"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "88.54%",
+          "87.33%",
+          "reduced displacement"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "88.54%",
+          "87.33%",
+          "reduced displacement"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "88.54%",
+          "87.33%",
+          "reduced displacement"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q07",
+      "paper": "paper_04.pdf",
+      "question": "How did seismic loading affect the structural response of the water tanks?",
+      "expected_evidence": [
+        "minor increases",
+        "support reactions",
+        "stresses",
+        "moments",
+        "displacement values remained largely unchanged"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "minor increases",
+          "support reactions",
+          "stresses",
+          "moments",
+          "displacement values remained largely unchanged"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": false,
+        "coverage": 0.6,
+        "rr": 1.0,
+        "matched": [
+          "support reactions",
+          "stresses",
+          "moments"
+        ],
+        "missing": [
+          "minor increases",
+          "displacement values remained largely unchanged"
+        ]
+      },
+      "preserved": {
+        "hit": true,
+        "full": false,
+        "coverage": 0.6,
+        "rr": 1.0,
+        "matched": [
+          "support reactions",
+          "stresses",
+          "moments"
+        ],
+        "missing": [
+          "minor increases",
+          "displacement values remained largely unchanged"
+        ]
+      }
+    },
+    {
+      "id": "p04_q08",
+      "paper": "paper_04.pdf",
+      "question": "Which model demonstrated the best overall structural performance and why?",
+      "expected_evidence": [
+        "Model 16",
+        "low displacement",
+        "high stiffness",
+        "satisfactory stress levels"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "Model 16",
+          "low displacement",
+          "high stiffness",
+          "satisfactory stress levels"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "Model 16",
+          "low displacement",
+          "high stiffness",
+          "satisfactory stress levels"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 0.5,
+        "matched": [
+          "Model 16",
+          "low displacement",
+          "high stiffness",
+          "satisfactory stress levels"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q09",
+      "paper": "paper_04.pdf",
+      "question": "How did rectangular and circular tanks differ in their structural performance?",
+      "expected_evidence": [
+        "rectangular tanks",
+        "better displacement control",
+        "circular tanks",
+        "higher bending moments"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular tanks",
+          "better displacement control",
+          "circular tanks",
+          "higher bending moments"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular tanks",
+          "better displacement control",
+          "circular tanks",
+          "higher bending moments"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "rectangular tanks",
+          "better displacement control",
+          "circular tanks",
+          "higher bending moments"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "p04_q10",
+      "paper": "paper_04.pdf",
+      "question": "What major conclusions did the study reach about wall thickness and tank geometry?",
+      "expected_evidence": [
+        "wall thickness",
+        "stiffness",
+        "rectangular tanks",
+        "circular tanks"
+      ],
+      "faiss": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "wall thickness",
+          "stiffness",
+          "rectangular tanks",
+          "circular tanks"
+        ],
+        "missing": []
+      },
+      "rrf": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "wall thickness",
+          "stiffness",
+          "rectangular tanks",
+          "circular tanks"
+        ],
+        "missing": []
+      },
+      "preserved": {
+        "hit": true,
+        "full": true,
+        "coverage": 1.0,
+        "rr": 1.0,
+        "matched": [
+          "wall thickness",
+          "stiffness",
+          "rectangular tanks",
+          "circular tanks"
+        ],
+        "missing": []
+      }
+    }
+  ]
+}

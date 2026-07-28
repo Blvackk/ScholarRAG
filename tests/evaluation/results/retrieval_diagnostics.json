@@ -1,0 +1,256 @@
+[
+    {
+        "id": "q01",
+        "question": "What is the main objective of this research paper?",
+        "evidence": [
+            {
+                "evidence": "mental fatigue",
+                "rank": 1,
+                "page": 2,
+                "preview": "given AI system behaves to anticipate where it might go wrong [1], [2].Of these, extraneous load is where the design problem  is sharpest. When AI outputs are probabilistic, context -dependent, and delivered at  high volume, operators  are effectivel"
+            },
+            {
+                "evidence": "human-in-the-loop",
+                "rank": 4,
+                "page": 3,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "multi-agent",
+                "rank": 2,
+                "page": 8,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 4
+    },
+    {
+        "id": "q02",
+        "question": "What three types of cognitive load are discussed in the paper?",
+        "evidence": [
+            {
+                "evidence": "intrinsic load",
+                "rank": 1,
+                "page": 2,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "extraneous load",
+                "rank": 1,
+                "page": 2,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "germane load",
+                "rank": 1,
+                "page": 2,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 1
+    },
+    {
+        "id": "q03",
+        "question": "What correlation does the paper report between information overload and fatigue?",
+        "evidence": [
+            {
+                "evidence": "r = 0.905",
+                "rank": 1,
+                "page": 2,
+                "preview": "33% compared to  baseline conditions [4]. Correlational data from broader AI use  surveys show  tight relationships between   prolonged system use and three fatigue indicators: information overload (r = 0.905), attentional strain (r = 0.874), and gen"
+            },
+            {
+                "evidence": "information overload",
+                "rank": 1,
+                "page": 2,
+                "preview": "33% compared to  baseline conditions [4]. Correlational data from broader AI use  surveys show  tight relationships between   prolonged system use and three fatigue indicators: information overload (r = 0.905), attentional strain (r = 0.874), and gen"
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 1
+    },
+    {
+        "id": "q04",
+        "question": "What methodology was used in this study?",
+        "evidence": [
+            {
+                "evidence": "systematic narrative review",
+                "rank": 7,
+                "page": 2,
+                "preview": "33% compared to  baseline conditions [4]. Correlational data from broader AI use  surveys show  tight relationships between   prolonged system use and three fatigue indicators: information overload (r = 0.905), attentional strain (r = 0.874), and gen"
+            },
+            {
+                "evidence": "No experimental data",
+                "rank": 10,
+                "page": 2,
+                "preview": "When directed attention is exhausted, engaging involuntary attention gives the effortful system a  chance to recover. This has a  concrete design implication: the recovery potential of a break depends on what happens during it, not just how long it l"
+            }
+        ],
+        "best_evidence_rank": 7,
+        "worst_evidence_rank": 10
+    },
+    {
+        "id": "q05",
+        "question": "Which academic databases were used to source the literature?",
+        "evidence": [
+            {
+                "evidence": "IEEE Xplore",
+                "rank": 5,
+                "page": 3,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "ScienceDirect",
+                "rank": 5,
+                "page": 3,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "PubMed Central",
+                "rank": 5,
+                "page": 3,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            }
+        ],
+        "best_evidence_rank": 5,
+        "worst_evidence_rank": 5
+    },
+    {
+        "id": "q06",
+        "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+        "evidence": [
+            {
+                "evidence": "39%",
+                "rank": 1,
+                "page": 3,
+                "preview": "presented in subsequent sections. Studies  that addressed fatigue  in adjacent domains, such as human-robot interaction and  autonomous vehicle supervision, were included where findings were determined to transfer meaningfully to multi -agent AI  ove"
+            },
+            {
+                "evidence": "more than three concurrent AI agents",
+                "rank": 1,
+                "page": 3,
+                "preview": "presented in subsequent sections. Studies  that addressed fatigue  in adjacent domains, such as human-robot interaction and  autonomous vehicle supervision, were included where findings were determined to transfer meaningfully to multi -agent AI  ove"
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 1
+    },
+    {
+        "id": "q07",
+        "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+        "evidence": [
+            {
+                "evidence": "Empirical Validation",
+                "rank": 4,
+                "page": 5,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "Longitudinal Effects",
+                "rank": 4,
+                "page": 5,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "MAS Supervision",
+                "rank": 4,
+                "page": 5,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "Cultural/Contextual Factors",
+                "rank": 4,
+                "page": 5,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            }
+        ],
+        "best_evidence_rank": 4,
+        "worst_evidence_rank": 4
+    },
+    {
+        "id": "q08",
+        "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+        "evidence": [
+            {
+                "evidence": "Adaptive Autonomy",
+                "rank": 9,
+                "page": 6,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "XAI Interface Design",
+                "rank": 5,
+                "page": 6,
+                "preview": "XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9]  Micro-Interventions Fatigue-triggered automated break  prompts  Attenuation of momentary fatigue [9]  Workload Triage NLP-based urgency-ranked task"
+            },
+            {
+                "evidence": "Micro-Interventions",
+                "rank": 5,
+                "page": 6,
+                "preview": "XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9]  Micro-Interventions Fatigue-triggered automated break  prompts  Attenuation of momentary fatigue [9]  Workload Triage NLP-based urgency-ranked task"
+            },
+            {
+                "evidence": "Workload Triage",
+                "rank": 5,
+                "page": 6,
+                "preview": "XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9]  Micro-Interventions Fatigue-triggered automated break  prompts  Attenuation of momentary fatigue [9]  Workload Triage NLP-based urgency-ranked task"
+            }
+        ],
+        "best_evidence_rank": 5,
+        "worst_evidence_rank": 9
+    },
+    {
+        "id": "q09",
+        "question": "What effect does workload triage have on supervisory error rates?",
+        "evidence": [
+            {
+                "evidence": "39% supervisory error reduction",
+                "rank": 1,
+                "page": 6,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            },
+            {
+                "evidence": "Workload Triage",
+                "rank": 1,
+                "page": 6,
+                "preview": "International Research Journal of Engineering and Technology (IRJET)      e-ISSN: 2395-0056            Volume: 13 Issue: 05 | May 2026              www.irjet.net                                                                 p-ISSN: 2395-0072     © "
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 1
+    },
+    {
+        "id": "q10",
+        "question": "What future research directions does the paper recommend?",
+        "evidence": [
+            {
+                "evidence": "longitudinal",
+                "rank": 4,
+                "page": 6,
+                "preview": "XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9]  Micro-Interventions Fatigue-triggered automated break  prompts  Attenuation of momentary fatigue [9]  Workload Triage NLP-based urgency-ranked task"
+            },
+            {
+                "evidence": "hybrid autonomy",
+                "rank": 4,
+                "page": 6,
+                "preview": "XAI Interface Design Visual rationales and confidence scoring Extraneous cognitive load reduction [9]  Micro-Interventions Fatigue-triggered automated break  prompts  Attenuation of momentary fatigue [9]  Workload Triage NLP-based urgency-ranked task"
+            },
+            {
+                "evidence": "generalist populations",
+                "rank": 1,
+                "page": 6,
+                "preview": "[8]. The question of whether increased agent autonomy reduces supervisory burden or simply changes its character is not  answerable from first principles.  Third, the field needs to move beyond generalist populations and examine fatigue in the domain"
+            },
+            {
+                "evidence": "fatigue estimation",
+                "rank": 1,
+                "page": 6,
+                "preview": "[8]. The question of whether increased agent autonomy reduces supervisory burden or simply changes its character is not  answerable from first principles.  Third, the field needs to move beyond generalist populations and examine fatigue in the domain"
+            }
+        ],
+        "best_evidence_rank": 1,
+        "worst_evidence_rank": 4
+    }
+]

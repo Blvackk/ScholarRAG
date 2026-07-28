@@ -1,8 +1,9 @@
+#loader.py
 import os
 from glob import glob
 from concurrent.futures import ThreadPoolExecutor
 
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 
 from config import Config
 from src.utils.helpers import clean_text

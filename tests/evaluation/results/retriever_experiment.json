@@ -1,0 +1,515 @@
+{
+    "experiment": "similarity_vs_mmr",
+    "mmr_settings": {
+        "fetch_k": 15,
+        "lambda_mult": 0.5
+    },
+    "results": [
+        {
+            "method": "similarity",
+            "k": 3,
+            "answerable_questions": 10,
+            "evidence_hit_at_k": 0.6,
+            "full_evidence_at_k": 0.4,
+            "mean_evidence_coverage": 0.5166666666666666,
+            "evidence_mrr": 0.6,
+            "questions": [
+                {
+                    "id": "q01",
+                    "question": "What is the main objective of this research paper?",
+                    "matched_evidence": [
+                        "mental fatigue",
+                        "multi-agent"
+                    ],
+                    "evidence_coverage": 0.6666666666666666,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q02",
+                    "question": "What three types of cognitive load are discussed in the paper?",
+                    "matched_evidence": [
+                        "intrinsic load",
+                        "extraneous load",
+                        "germane load"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q03",
+                    "question": "What correlation does the paper report between information overload and fatigue?",
+                    "matched_evidence": [
+                        "r = 0.905",
+                        "information overload"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q04",
+                    "question": "What methodology was used in this study?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q05",
+                    "question": "Which academic databases were used to source the literature?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q06",
+                    "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+                    "matched_evidence": [
+                        "39%",
+                        "more than three concurrent AI agents"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q07",
+                    "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q08",
+                    "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q09",
+                    "question": "What effect does workload triage have on supervisory error rates?",
+                    "matched_evidence": [
+                        "39% supervisory error reduction",
+                        "Workload Triage"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q10",
+                    "question": "What future research directions does the paper recommend?",
+                    "matched_evidence": [
+                        "generalist populations",
+                        "fatigue estimation"
+                    ],
+                    "evidence_coverage": 0.5,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                }
+            ]
+        },
+        {
+            "method": "similarity",
+            "k": 5,
+            "answerable_questions": 10,
+            "evidence_hit_at_k": 0.9,
+            "full_evidence_at_k": 0.8,
+            "mean_evidence_coverage": 0.875,
+            "evidence_mrr": 0.665,
+            "questions": [
+                {
+                    "id": "q01",
+                    "question": "What is the main objective of this research paper?",
+                    "matched_evidence": [
+                        "mental fatigue",
+                        "human-in-the-loop",
+                        "multi-agent"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q02",
+                    "question": "What three types of cognitive load are discussed in the paper?",
+                    "matched_evidence": [
+                        "intrinsic load",
+                        "extraneous load",
+                        "germane load"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q03",
+                    "question": "What correlation does the paper report between information overload and fatigue?",
+                    "matched_evidence": [
+                        "r = 0.905",
+                        "information overload"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q04",
+                    "question": "What methodology was used in this study?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q05",
+                    "question": "Which academic databases were used to source the literature?",
+                    "matched_evidence": [
+                        "IEEE Xplore",
+                        "ScienceDirect",
+                        "PubMed Central"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 5
+                },
+                {
+                    "id": "q06",
+                    "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+                    "matched_evidence": [
+                        "39%",
+                        "more than three concurrent AI agents"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q07",
+                    "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+                    "matched_evidence": [
+                        "Empirical Validation",
+                        "Longitudinal Effects",
+                        "MAS Supervision",
+                        "Cultural/Contextual Factors"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 4
+                },
+                {
+                    "id": "q08",
+                    "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+                    "matched_evidence": [
+                        "XAI Interface Design",
+                        "Micro-Interventions",
+                        "Workload Triage"
+                    ],
+                    "evidence_coverage": 0.75,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 5
+                },
+                {
+                    "id": "q09",
+                    "question": "What effect does workload triage have on supervisory error rates?",
+                    "matched_evidence": [
+                        "39% supervisory error reduction",
+                        "Workload Triage"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q10",
+                    "question": "What future research directions does the paper recommend?",
+                    "matched_evidence": [
+                        "longitudinal",
+                        "hybrid autonomy",
+                        "generalist populations",
+                        "fatigue estimation"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                }
+            ]
+        },
+        {
+            "method": "mmr",
+            "k": 3,
+            "answerable_questions": 10,
+            "evidence_hit_at_k": 0.7,
+            "full_evidence_at_k": 0.5,
+            "mean_evidence_coverage": 0.6166666666666666,
+            "evidence_mrr": 0.65,
+            "questions": [
+                {
+                    "id": "q01",
+                    "question": "What is the main objective of this research paper?",
+                    "matched_evidence": [
+                        "mental fatigue",
+                        "multi-agent"
+                    ],
+                    "evidence_coverage": 0.6666666666666666,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q02",
+                    "question": "What three types of cognitive load are discussed in the paper?",
+                    "matched_evidence": [
+                        "intrinsic load",
+                        "extraneous load",
+                        "germane load"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q03",
+                    "question": "What correlation does the paper report between information overload and fatigue?",
+                    "matched_evidence": [
+                        "r = 0.905",
+                        "information overload"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q04",
+                    "question": "What methodology was used in this study?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q05",
+                    "question": "Which academic databases were used to source the literature?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q06",
+                    "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+                    "matched_evidence": [
+                        "39%",
+                        "more than three concurrent AI agents"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q07",
+                    "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+                    "matched_evidence": [
+                        "Empirical Validation",
+                        "Longitudinal Effects",
+                        "MAS Supervision",
+                        "Cultural/Contextual Factors"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 2
+                },
+                {
+                    "id": "q08",
+                    "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q09",
+                    "question": "What effect does workload triage have on supervisory error rates?",
+                    "matched_evidence": [
+                        "39% supervisory error reduction",
+                        "Workload Triage"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q10",
+                    "question": "What future research directions does the paper recommend?",
+                    "matched_evidence": [
+                        "generalist populations",
+                        "fatigue estimation"
+                    ],
+                    "evidence_coverage": 0.5,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                }
+            ]
+        },
+        {
+            "method": "mmr",
+            "k": 5,
+            "answerable_questions": 10,
+            "evidence_hit_at_k": 0.7,
+            "full_evidence_at_k": 0.5,
+            "mean_evidence_coverage": 0.6166666666666666,
+            "evidence_mrr": 0.65,
+            "questions": [
+                {
+                    "id": "q01",
+                    "question": "What is the main objective of this research paper?",
+                    "matched_evidence": [
+                        "mental fatigue",
+                        "multi-agent"
+                    ],
+                    "evidence_coverage": 0.6666666666666666,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q02",
+                    "question": "What three types of cognitive load are discussed in the paper?",
+                    "matched_evidence": [
+                        "intrinsic load",
+                        "extraneous load",
+                        "germane load"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q03",
+                    "question": "What correlation does the paper report between information overload and fatigue?",
+                    "matched_evidence": [
+                        "r = 0.905",
+                        "information overload"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q04",
+                    "question": "What methodology was used in this study?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q05",
+                    "question": "Which academic databases were used to source the literature?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q06",
+                    "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+                    "matched_evidence": [
+                        "39%",
+                        "more than three concurrent AI agents"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q07",
+                    "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+                    "matched_evidence": [
+                        "Empirical Validation",
+                        "Longitudinal Effects",
+                        "MAS Supervision",
+                        "Cultural/Contextual Factors"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 2
+                },
+                {
+                    "id": "q08",
+                    "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+                    "matched_evidence": [],
+                    "evidence_coverage": 0.0,
+                    "evidence_hit": false,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": null
+                },
+                {
+                    "id": "q09",
+                    "question": "What effect does workload triage have on supervisory error rates?",
+                    "matched_evidence": [
+                        "39% supervisory error reduction",
+                        "Workload Triage"
+                    ],
+                    "evidence_coverage": 1.0,
+                    "evidence_hit": true,
+                    "full_evidence_hit": true,
+                    "first_evidence_rank": 1
+                },
+                {
+                    "id": "q10",
+                    "question": "What future research directions does the paper recommend?",
+                    "matched_evidence": [
+                        "generalist populations",
+                        "fatigue estimation"
+                    ],
+                    "evidence_coverage": 0.5,
+                    "evidence_hit": true,
+                    "full_evidence_hit": false,
+                    "first_evidence_rank": 1
+                }
+            ]
+        }
+    ]
+}

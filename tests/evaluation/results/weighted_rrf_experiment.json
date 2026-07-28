@@ -1,0 +1,1099 @@
+{
+  "experiment": "weighted_rrf",
+  "configuration": {
+    "top_k": 5,
+    "candidate_k": 10,
+    "rrf_k": 60,
+    "weight_configs": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.25,
+        1.0
+      ],
+      [
+        1.5,
+        1.0
+      ],
+      [
+        1.75,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ]
+    ],
+    "questions": 10,
+    "chunks": 24
+  },
+  "experiments": [
+    {
+      "faiss_weight": 1.0,
+      "bm25_weight": 1.0,
+      "metrics": {
+        "hit_at_5": 1.0,
+        "full_at_5": 0.9,
+        "coverage": 0.975,
+        "mrr": 0.7733333333333333
+      },
+      "questions": [
+        {
+          "id": "q01",
+          "question": "What is the main objective of this research paper?",
+          "category": "overview",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "mental fatigue",
+            "human-in-the-loop",
+            "multi-agent"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "mental fatigue": 1,
+            "human-in-the-loop": 1,
+            "multi-agent": 1
+          }
+        },
+        {
+          "id": "q02",
+          "question": "What three types of cognitive load are discussed in the paper?",
+          "category": "concept",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "intrinsic load",
+            "extraneous load",
+            "germane load"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "intrinsic load": 1,
+            "extraneous load": 1,
+            "germane load": 1
+          }
+        },
+        {
+          "id": "q03",
+          "question": "What correlation does the paper report between information overload and fatigue?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "r = 0.905",
+            "information overload"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "r = 0.905": 1,
+            "information overload": 1
+          }
+        },
+        {
+          "id": "q04",
+          "question": "What methodology was used in this study?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.2,
+          "matched": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "systematic narrative review": 5,
+            "No experimental data": 5
+          }
+        },
+        {
+          "id": "q05",
+          "question": "Which academic databases were used to source the literature?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "IEEE Xplore",
+            "ScienceDirect",
+            "PubMed Central"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "IEEE Xplore": 1,
+            "ScienceDirect": 1,
+            "PubMed Central": 1
+          }
+        },
+        {
+          "id": "q06",
+          "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39%",
+            "more than three concurrent AI agents"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39%": 1,
+            "more than three concurrent AI agents": 1
+          }
+        },
+        {
+          "id": "q07",
+          "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+          "category": "research_gap",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.3333333333333333,
+          "matched": [
+            "Empirical Validation",
+            "Longitudinal Effects",
+            "MAS Supervision",
+            "Cultural/Contextual Factors"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Empirical Validation": 3,
+            "Longitudinal Effects": 3,
+            "MAS Supervision": 3,
+            "Cultural/Contextual Factors": 3
+          }
+        },
+        {
+          "id": "q08",
+          "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+          "category": "mitigation",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.2,
+          "matched": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Adaptive Autonomy": 5,
+            "XAI Interface Design": 5,
+            "Micro-Interventions": 5,
+            "Workload Triage": 5
+          }
+        },
+        {
+          "id": "q09",
+          "question": "What effect does workload triage have on supervisory error rates?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39% supervisory error reduction",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39% supervisory error reduction": 1,
+            "Workload Triage": 1
+          }
+        },
+        {
+          "id": "q10",
+          "question": "What future research directions does the paper recommend?",
+          "category": "future_work",
+          "coverage": 0.75,
+          "hit": true,
+          "full": false,
+          "rr": 1.0,
+          "matched": [
+            "longitudinal",
+            "hybrid autonomy",
+            "generalist populations"
+          ],
+          "missing": [
+            "fatigue estimation"
+          ],
+          "evidence_ranks": {
+            "longitudinal": 1,
+            "hybrid autonomy": 1,
+            "generalist populations": 1,
+            "fatigue estimation": null
+          }
+        }
+      ]
+    },
+    {
+      "faiss_weight": 1.25,
+      "bm25_weight": 1.0,
+      "metrics": {
+        "hit_at_5": 0.9,
+        "full_at_5": 0.8,
+        "coverage": 0.875,
+        "mrr": 0.77
+      },
+      "questions": [
+        {
+          "id": "q01",
+          "question": "What is the main objective of this research paper?",
+          "category": "overview",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "mental fatigue",
+            "human-in-the-loop",
+            "multi-agent"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "mental fatigue": 1,
+            "human-in-the-loop": 1,
+            "multi-agent": 1
+          }
+        },
+        {
+          "id": "q02",
+          "question": "What three types of cognitive load are discussed in the paper?",
+          "category": "concept",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "intrinsic load",
+            "extraneous load",
+            "germane load"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "intrinsic load": 1,
+            "extraneous load": 1,
+            "germane load": 1
+          }
+        },
+        {
+          "id": "q03",
+          "question": "What correlation does the paper report between information overload and fatigue?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "r = 0.905",
+            "information overload"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "r = 0.905": 1,
+            "information overload": 1
+          }
+        },
+        {
+          "id": "q04",
+          "question": "What methodology was used in this study?",
+          "category": "methodology",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "evidence_ranks": {
+            "systematic narrative review": null,
+            "No experimental data": null
+          }
+        },
+        {
+          "id": "q05",
+          "question": "Which academic databases were used to source the literature?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "IEEE Xplore",
+            "ScienceDirect",
+            "PubMed Central"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "IEEE Xplore": 1,
+            "ScienceDirect": 1,
+            "PubMed Central": 1
+          }
+        },
+        {
+          "id": "q06",
+          "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39%",
+            "more than three concurrent AI agents"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39%": 1,
+            "more than three concurrent AI agents": 1
+          }
+        },
+        {
+          "id": "q07",
+          "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+          "category": "research_gap",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.5,
+          "matched": [
+            "Empirical Validation",
+            "Longitudinal Effects",
+            "MAS Supervision",
+            "Cultural/Contextual Factors"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Empirical Validation": 2,
+            "Longitudinal Effects": 2,
+            "MAS Supervision": 2,
+            "Cultural/Contextual Factors": 2
+          }
+        },
+        {
+          "id": "q08",
+          "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+          "category": "mitigation",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.2,
+          "matched": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Adaptive Autonomy": 5,
+            "XAI Interface Design": 5,
+            "Micro-Interventions": 5,
+            "Workload Triage": 5
+          }
+        },
+        {
+          "id": "q09",
+          "question": "What effect does workload triage have on supervisory error rates?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39% supervisory error reduction",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39% supervisory error reduction": 1,
+            "Workload Triage": 1
+          }
+        },
+        {
+          "id": "q10",
+          "question": "What future research directions does the paper recommend?",
+          "category": "future_work",
+          "coverage": 0.75,
+          "hit": true,
+          "full": false,
+          "rr": 1.0,
+          "matched": [
+            "longitudinal",
+            "hybrid autonomy",
+            "generalist populations"
+          ],
+          "missing": [
+            "fatigue estimation"
+          ],
+          "evidence_ranks": {
+            "longitudinal": 1,
+            "hybrid autonomy": 1,
+            "generalist populations": 1,
+            "fatigue estimation": null
+          }
+        }
+      ]
+    },
+    {
+      "faiss_weight": 1.5,
+      "bm25_weight": 1.0,
+      "metrics": {
+        "hit_at_5": 0.8,
+        "full_at_5": 0.7,
+        "coverage": 0.775,
+        "mrr": 0.75
+      },
+      "questions": [
+        {
+          "id": "q01",
+          "question": "What is the main objective of this research paper?",
+          "category": "overview",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "mental fatigue",
+            "human-in-the-loop",
+            "multi-agent"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "mental fatigue": 1,
+            "human-in-the-loop": 1,
+            "multi-agent": 1
+          }
+        },
+        {
+          "id": "q02",
+          "question": "What three types of cognitive load are discussed in the paper?",
+          "category": "concept",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "intrinsic load",
+            "extraneous load",
+            "germane load"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "intrinsic load": 1,
+            "extraneous load": 1,
+            "germane load": 1
+          }
+        },
+        {
+          "id": "q03",
+          "question": "What correlation does the paper report between information overload and fatigue?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "r = 0.905",
+            "information overload"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "r = 0.905": 1,
+            "information overload": 1
+          }
+        },
+        {
+          "id": "q04",
+          "question": "What methodology was used in this study?",
+          "category": "methodology",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "evidence_ranks": {
+            "systematic narrative review": null,
+            "No experimental data": null
+          }
+        },
+        {
+          "id": "q05",
+          "question": "Which academic databases were used to source the literature?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "IEEE Xplore",
+            "ScienceDirect",
+            "PubMed Central"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "IEEE Xplore": 1,
+            "ScienceDirect": 1,
+            "PubMed Central": 1
+          }
+        },
+        {
+          "id": "q06",
+          "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39%",
+            "more than three concurrent AI agents"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39%": 1,
+            "more than three concurrent AI agents": 1
+          }
+        },
+        {
+          "id": "q07",
+          "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+          "category": "research_gap",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.5,
+          "matched": [
+            "Empirical Validation",
+            "Longitudinal Effects",
+            "MAS Supervision",
+            "Cultural/Contextual Factors"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Empirical Validation": 2,
+            "Longitudinal Effects": 2,
+            "MAS Supervision": 2,
+            "Cultural/Contextual Factors": 2
+          }
+        },
+        {
+          "id": "q08",
+          "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+          "category": "mitigation",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "evidence_ranks": {
+            "Adaptive Autonomy": null,
+            "XAI Interface Design": null,
+            "Micro-Interventions": null,
+            "Workload Triage": null
+          }
+        },
+        {
+          "id": "q09",
+          "question": "What effect does workload triage have on supervisory error rates?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39% supervisory error reduction",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39% supervisory error reduction": 1,
+            "Workload Triage": 1
+          }
+        },
+        {
+          "id": "q10",
+          "question": "What future research directions does the paper recommend?",
+          "category": "future_work",
+          "coverage": 0.75,
+          "hit": true,
+          "full": false,
+          "rr": 1.0,
+          "matched": [
+            "longitudinal",
+            "hybrid autonomy",
+            "generalist populations"
+          ],
+          "missing": [
+            "fatigue estimation"
+          ],
+          "evidence_ranks": {
+            "longitudinal": 1,
+            "hybrid autonomy": 1,
+            "generalist populations": 1,
+            "fatigue estimation": null
+          }
+        }
+      ]
+    },
+    {
+      "faiss_weight": 1.75,
+      "bm25_weight": 1.0,
+      "metrics": {
+        "hit_at_5": 0.8,
+        "full_at_5": 0.7,
+        "coverage": 0.775,
+        "mrr": 0.75
+      },
+      "questions": [
+        {
+          "id": "q01",
+          "question": "What is the main objective of this research paper?",
+          "category": "overview",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "mental fatigue",
+            "human-in-the-loop",
+            "multi-agent"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "mental fatigue": 1,
+            "human-in-the-loop": 1,
+            "multi-agent": 1
+          }
+        },
+        {
+          "id": "q02",
+          "question": "What three types of cognitive load are discussed in the paper?",
+          "category": "concept",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "intrinsic load",
+            "extraneous load",
+            "germane load"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "intrinsic load": 1,
+            "extraneous load": 1,
+            "germane load": 1
+          }
+        },
+        {
+          "id": "q03",
+          "question": "What correlation does the paper report between information overload and fatigue?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "r = 0.905",
+            "information overload"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "r = 0.905": 1,
+            "information overload": 1
+          }
+        },
+        {
+          "id": "q04",
+          "question": "What methodology was used in this study?",
+          "category": "methodology",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "evidence_ranks": {
+            "systematic narrative review": null,
+            "No experimental data": null
+          }
+        },
+        {
+          "id": "q05",
+          "question": "Which academic databases were used to source the literature?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "IEEE Xplore",
+            "ScienceDirect",
+            "PubMed Central"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "IEEE Xplore": 1,
+            "ScienceDirect": 1,
+            "PubMed Central": 1
+          }
+        },
+        {
+          "id": "q06",
+          "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39%",
+            "more than three concurrent AI agents"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39%": 1,
+            "more than three concurrent AI agents": 1
+          }
+        },
+        {
+          "id": "q07",
+          "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+          "category": "research_gap",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.5,
+          "matched": [
+            "Empirical Validation",
+            "Longitudinal Effects",
+            "MAS Supervision",
+            "Cultural/Contextual Factors"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Empirical Validation": 2,
+            "Longitudinal Effects": 2,
+            "MAS Supervision": 2,
+            "Cultural/Contextual Factors": 2
+          }
+        },
+        {
+          "id": "q08",
+          "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+          "category": "mitigation",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "evidence_ranks": {
+            "Adaptive Autonomy": null,
+            "XAI Interface Design": null,
+            "Micro-Interventions": null,
+            "Workload Triage": null
+          }
+        },
+        {
+          "id": "q09",
+          "question": "What effect does workload triage have on supervisory error rates?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39% supervisory error reduction",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39% supervisory error reduction": 1,
+            "Workload Triage": 1
+          }
+        },
+        {
+          "id": "q10",
+          "question": "What future research directions does the paper recommend?",
+          "category": "future_work",
+          "coverage": 0.75,
+          "hit": true,
+          "full": false,
+          "rr": 1.0,
+          "matched": [
+            "longitudinal",
+            "hybrid autonomy",
+            "generalist populations"
+          ],
+          "missing": [
+            "fatigue estimation"
+          ],
+          "evidence_ranks": {
+            "longitudinal": 1,
+            "hybrid autonomy": 1,
+            "generalist populations": 1,
+            "fatigue estimation": null
+          }
+        }
+      ]
+    },
+    {
+      "faiss_weight": 2.0,
+      "bm25_weight": 1.0,
+      "metrics": {
+        "hit_at_5": 0.8,
+        "full_at_5": 0.7,
+        "coverage": 0.775,
+        "mrr": 0.75
+      },
+      "questions": [
+        {
+          "id": "q01",
+          "question": "What is the main objective of this research paper?",
+          "category": "overview",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "mental fatigue",
+            "human-in-the-loop",
+            "multi-agent"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "mental fatigue": 1,
+            "human-in-the-loop": 1,
+            "multi-agent": 1
+          }
+        },
+        {
+          "id": "q02",
+          "question": "What three types of cognitive load are discussed in the paper?",
+          "category": "concept",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "intrinsic load",
+            "extraneous load",
+            "germane load"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "intrinsic load": 1,
+            "extraneous load": 1,
+            "germane load": 1
+          }
+        },
+        {
+          "id": "q03",
+          "question": "What correlation does the paper report between information overload and fatigue?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "r = 0.905",
+            "information overload"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "r = 0.905": 1,
+            "information overload": 1
+          }
+        },
+        {
+          "id": "q04",
+          "question": "What methodology was used in this study?",
+          "category": "methodology",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "systematic narrative review",
+            "No experimental data"
+          ],
+          "evidence_ranks": {
+            "systematic narrative review": null,
+            "No experimental data": null
+          }
+        },
+        {
+          "id": "q05",
+          "question": "Which academic databases were used to source the literature?",
+          "category": "methodology",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "IEEE Xplore",
+            "ScienceDirect",
+            "PubMed Central"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "IEEE Xplore": 1,
+            "ScienceDirect": 1,
+            "PubMed Central": 1
+          }
+        },
+        {
+          "id": "q06",
+          "question": "How much do error rates increase when supervisors oversee more than three concurrent AI agents?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39%",
+            "more than three concurrent AI agents"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39%": 1,
+            "more than three concurrent AI agents": 1
+          }
+        },
+        {
+          "id": "q07",
+          "question": "What major research gaps in mental fatigue and HITL systems are identified?",
+          "category": "research_gap",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 0.5,
+          "matched": [
+            "Empirical Validation",
+            "Longitudinal Effects",
+            "MAS Supervision",
+            "Cultural/Contextual Factors"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "Empirical Validation": 2,
+            "Longitudinal Effects": 2,
+            "MAS Supervision": 2,
+            "Cultural/Contextual Factors": 2
+          }
+        },
+        {
+          "id": "q08",
+          "question": "What mitigation strategies are proposed for reducing mental fatigue in HITL systems?",
+          "category": "mitigation",
+          "coverage": 0.0,
+          "hit": false,
+          "full": false,
+          "rr": 0.0,
+          "matched": [],
+          "missing": [
+            "Adaptive Autonomy",
+            "XAI Interface Design",
+            "Micro-Interventions",
+            "Workload Triage"
+          ],
+          "evidence_ranks": {
+            "Adaptive Autonomy": null,
+            "XAI Interface Design": null,
+            "Micro-Interventions": null,
+            "Workload Triage": null
+          }
+        },
+        {
+          "id": "q09",
+          "question": "What effect does workload triage have on supervisory error rates?",
+          "category": "numeric",
+          "coverage": 1.0,
+          "hit": true,
+          "full": true,
+          "rr": 1.0,
+          "matched": [
+            "39% supervisory error reduction",
+            "Workload Triage"
+          ],
+          "missing": [],
+          "evidence_ranks": {
+            "39% supervisory error reduction": 1,
+            "Workload Triage": 1
+          }
+        },
+        {
+          "id": "q10",
+          "question": "What future research directions does the paper recommend?",
+          "category": "future_work",
+          "coverage": 0.75,
+          "hit": true,
+          "full": false,
+          "rr": 1.0,
+          "matched": [
+            "longitudinal",
+            "hybrid autonomy",
+            "generalist populations"
+          ],
+          "missing": [
+            "fatigue estimation"
+          ],
+          "evidence_ranks": {
+            "longitudinal": 1,
+            "hybrid autonomy": 1,
+            "generalist populations": 1,
+            "fatigue estimation": null
+          }
+        }
+      ]
+    }
+  ],
+  "best_configuration": {
+    "faiss_weight": 1.0,
+    "bm25_weight": 1.0,
+    "metrics": {
+      "hit_at_5": 1.0,
+      "full_at_5": 0.9,
+      "coverage": 0.975,
+      "mrr": 0.7733333333333333
+    }
+  }
+}
